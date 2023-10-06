@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/hai.css">
-    <link rel="stylesheet" href="/assets/css/bao.css">
-    <link rel="stylesheet" href="/assets/css/thinh.css">
-    <script src="/assets/js/app.js"></script>
-    <title>Document</title> 
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/hai.css">
+    <link rel="stylesheet" href="./assets/css/bao.css">
+    <link rel="stylesheet" href="./assets/css/thinh.css">
+    <script src="./assets/js/app.js"></script>
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="sort_infor">
-        <p>CÔNG TY CỔ PHẦN DƯỢC MỸ PHẨM NACIVA</p>
-        <div class="sort_infor--contact">
-            <ion-icon name="mail-outline"></ion-icon><span>cskh@gmail.com</span>
-            <ion-icon name="call-outline"></ion-icon><span>0948.558.334</span>
+    <div class="sort_infor_father"> 
+
+        <div class="sort_infor">
+            <p>CÔNG TY CỔ PHẦN DƯỢC MỸ PHẨM NACIVA</p>
+            <div class="sort_infor--contact">
+                <div class="sort_infor--contact-1">
+
+                    <ion-icon name="mail-outline"></ion-icon><span>cskh@gmail.com</span>
+                </div>
+                <div class="sort_infor--contact-2">
+
+                    <ion-icon name="call-outline"></ion-icon><span>0948.558.334</span>
+                </div>
+                <div class="sort_infor--contact-3">
+
+                    <ion-icon name="cart-outline"></ion-icon> <span>giỏ hàng</span>
+                </div>
+            </div>
         </div>
     </div>
-    
+
     <div class="header">
         <div class="header__top">
-            <img src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/logo-naciva.png" alt="" class="header__top--logo">
+            <img src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/logo-naciva.png" alt=""
+                class="header__top--logo">
             <div class="header__top--search">
                 <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
                 <ion-icon name="search-outline"></ion-icon>
             </div>
             <div class="header__top--hotline">
-                <ion-icon class="icon_big-size"  name="call-outline"></ion-icon>
+                <ion-icon class="icon_big-size" name="call-outline"></ion-icon>
                 <div class="header__top--hotline-content">
                     <span>Chăm sóc khách hàng</span>
                     <h3>0948.558.334</h3>
                 </div>
             </div>
             <div class="header__top--login-regist">
-                <ion-icon class="icon_big-size"  name="person-outline"></ion-icon>
+                <ion-icon class="icon_big-size" name="person-outline"></ion-icon>
                 <div class="header__top--login-regist-content">
                     <p>Đăng nhập / Đăng ký</p>
                     <span>Tài khoản</span><ion-icon name="chevron-down-outline"></ion-icon>
@@ -44,14 +60,14 @@
             </div>
             <div class="header__top--cart">
                 <a href="">
-                    <ion-icon class="icon_big-size"  name="cart-outline"></ion-icon>
+                    <ion-icon class="icon_big-size" name="cart-outline"></ion-icon>
                     <span class="quantity-in-cart">0</span>
-                    
+
                 </a>
             </div>
         </div>
         <div class="header__nav">
-            <ul >
+            <ul>
                 <li><a href="#" onclick="loadHTML('tab','homeTab.html')">Trang chủ</a></li>
                 <li><a href="#" onclick="loadHTML('tab','introTab.html')">Giới thiệu</a></li>
                 <li><a href="#" onclick="loadHTML('tab','productTab.html')">Sản phẩm</a></li>
@@ -68,14 +84,17 @@
     </div>
 
     <div class="tab" id="tab">
-        
+
     </div>
 
 
     <div class="footer">
         <div class="footer__item">
-            <img src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/logo-naciva.png" alt="" class="footer__item--logo">
-            <p>Chúng tôi không ngừng đổi mới, và liên tục nghiên cứu sáng tạo, thiết kế các bộ giải pháp chăm sóc sức khỏe, sắc đẹp góp phần nâng cao chất lượng sống của cộng đồng, nâng tầm vị thế thương hiệu mỹ phẩm Việt trên trường quốc tế.</p>
+            <img src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/logo-naciva.png" alt=""
+                class="footer__item--logo">
+            <p>Chúng tôi không ngừng đổi mới, và liên tục nghiên cứu sáng tạo, thiết kế các bộ giải pháp chăm sóc sức
+                khỏe, sắc đẹp góp phần nâng cao chất lượng sống của cộng đồng, nâng tầm vị thế thương hiệu mỹ phẩm Việt
+                trên trường quốc tế.</p>
 
         </div>
         <div class="footer__item">
@@ -86,7 +105,8 @@
             </p>
             <p><span>Email:</span>cskh@naciva.vn</p>
             <p><span>Điện thoại:</span>0833.356.969</p>
-            <p><span>Địa chỉ:</span>No7, Liền Kề 20-21 Khu Đất Dịch Vụ Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, Tp Hà Nội.</p>
+            <p><span>Địa chỉ:</span>No7, Liền Kề 20-21 Khu Đất Dịch Vụ Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, Tp Hà
+                Nội.</p>
         </div>
         <div class="footer__item">
             <h3>Sản phẩm chính</h3>
@@ -96,7 +116,7 @@
             <p><a href="#">Tinh chất mọc tóc Naciva</a></p>
             <p><a href="#">Viên uống kích thích mọc tóc Naciva</a></p>
             <div class="footer__item--hotline">
-                <ion-icon class="icon_big-size"  name="call-outline"></ion-icon>
+                <ion-icon class="icon_big-size footer__item--hotline-icon" name="call-outline"></ion-icon>
                 <div class="footer__item--hotline-content">
                     <p>Giải đáp thắc mắc khiếu nại</p>
                     <p>0948.558.334 (8:00 - 20:00 )</p>
@@ -114,20 +134,22 @@
     <div class="footer_coppyright">
         <p>Copyright 2023 © Công Ty Cổ phần Dược Mỹ phẩm Naciva</p>
     </div>
-    <script>
-        const nav = document.querySelector(".header__nav");
-        console.log(nav);
-        window.addEventListener("scroll", () => {
-            const scrollPosition = window.scrollY;
 
-            if (scrollPosition > 300) {
-                nav.classList.add("sticky");
-            } else {
-                nav.classList.remove("sticky");
-            }
-            
-        });
-    </script>
 
 </body>
+<script>
+    const nav = document.querySelector(".header__nav");
+    console.log(nav);
+    window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 300) {
+            nav.classList.add("sticky");
+        } else {
+            nav.classList.remove("sticky");
+        }
+
+    });
+</script>
+
 </html>
