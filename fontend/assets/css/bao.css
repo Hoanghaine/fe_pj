@@ -8,5 +8,8 @@
 .home_title{
     width: 100%;
     margin-bottom: 20px;
-    display: flex;
 }
+.home_title img{
+   width: 100%;
+}
+
