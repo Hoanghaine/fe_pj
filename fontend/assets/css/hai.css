@@ -21,6 +21,8 @@
     background-color: var(--color_green);
     color: #fff;
     display: flex;
+    padding-left:100px ;
+    padding-right: 100px;
 }
 
 .sort_infor ion-icon{
@@ -29,19 +31,22 @@
 }
 
 .sort_infor p:first-child{
-    margin-left: 30px;
+
 }
 
 
-.sort_infor--contact>ion-icon {
+.sort_infor--right>ion-icon {
     margin-left: 20px;
-    border-left: 1px solid #fff;
     padding-left: 10px;
 }
-.sort_infor--contact:first-child{
+.sort_infor--right ion-icon:not(:first-child){
+    border-left: 1px solid #73AE5C;
+
+}
+.sort_infor--right:first-child{
     border: none;
 }
-.sort_infor--contact{
+.sort_infor--right{
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -50,7 +55,8 @@
 .header{
     display: block;
     position: static;
-    padding-top: 10px;
+
+    padding-top: 10px ;
     border-bottom: 1px solid #eee;
 }
 .header__top{
@@ -59,7 +65,7 @@
     justify-content: space-between;
     align-items: center;
     position: static;
-
+    padding: 0 100px;
 }
 .header__top ion-icon{
     color: var(--color_green);
@@ -75,6 +81,8 @@
     background-color: #fff;
     padding: 15px;
     transition: max-height 0.3s ease-out;
+    padding: 15px 70px;
+
 }
 .header__nav ul{
     display: flex;
@@ -94,12 +102,13 @@
 .header__nav.sticky {
     position: fixed;
     top: 0;
-    width: 100%;
     box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+    width: 100%;
 }
 
 .header__top--logo{
-
+    width: 240px;
+    height: 68px;
 }
 .header__top--search{
     border: 1px solid #eee;
@@ -136,27 +145,20 @@
     color:  var(--color_green);
 
 }
-.header__top--login-regist{
+.header__top--user{
     display: flex;
 
 }
-.header__top--login-regist-content{
+.header__top--user a{
+    text-decoration: none;
+    color: #000;
 
 }
-.header__top--cart{
-    margin-right: 20px;
-    position: relative;
+#login:hover{
+    color: var(--color_green);
 }
-.quantity-in-cart{
-    position: absolute;
-    top: 0;
-    right: 0;
-    line-height: 17px;
-    background-color: red;
-    color: #fff;
-    border-radius: 50%;
-    padding: 0 5px;
-    font-size: 12px;
+#regist:hover{
+    color: var(--color_green);
 }
 
 /* footer */
