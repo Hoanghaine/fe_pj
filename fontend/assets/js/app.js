@@ -22,7 +22,7 @@ function loadHTML(id, filename) {
     return;
   }
 }
-loadHTML("tab", "mainTab.html");
+loadHTML("tab", "homeTab.html");
 
 
 

@@ -1,11 +1,12 @@
 .home{
     width: 100%;
+    height: 700px;
 
 }
 
 
 .home_title{
     width: 100%;
-    height: 300px;
     margin-bottom: 20px;
+    display: flex;
 }
