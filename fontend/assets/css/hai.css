@@ -12,45 +12,31 @@
     cursor: pointer;
     z-index: 50;
 }
-.sort_infor_father{
-    width: 100%;
-    background-color: var(--color_green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .sort_infor{
     height: 40px;
-    width: 80%;
-  
-    /* background-color: var(--color_green); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color_green);
     color: #fff;
     display: flex;
 }
-.sort_infor p{
-    font-size: 14px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
 
-    margin: 0;
-}
 .sort_infor ion-icon{
     margin-right: 10px;
     font-size: 20px;
 }
 
+.sort_infor p:first-child{
+    margin-left: 30px;
+}
 
 
 .sort_infor--contact>ion-icon {
-    /* margin-left: 20px; */
+    margin-left: 20px;
     border-left: 1px solid #fff;
-    /* padding-left: 10px; */
-}
-.sort_infor--contact-2 ,.sort_infor--contact-1,.sort_infor--contact-3{
-     display: flex;
-     justify-content: space-around;
-     
+    padding-left: 10px;
 }
 .sort_infor--contact:first-child{
     border: none;
@@ -206,19 +192,13 @@
 }
 .footer__item--hotline{
     display: flex;
-    /* position: relative; */
     border: 1px solid var(--color_green);
     padding: 10px;
     border-radius: 10px;
     background-color: #eee;
     align-items: center;
 }
-.footer__item--hotline-icon{
-    /* position: absolute; */
-    top:10px;
-    width: 20px;
-    height: 50px;
-}
+
 .footer__item--hotline-content{
     display: flex;
     flex-direction: column;
@@ -233,12 +213,10 @@
     height: 50px;
     color: #fff;
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     align-items: center;
 }
-.footer_coppyright p{
-    width: 40%;
-}
+
 
 .tab{
     box-sizing: border-box;
