@@ -1,6 +1,6 @@
 
 function loadHTML(id, filename) {
-  console.log(`div id: ${id}, filename: ${filename}`);
+  // console.log(`div id: ${id}, filename: ${filename}`);
   let xhttp;
   let element = document.getElementById(id);
   let file = filename;
@@ -22,7 +22,13 @@ function loadHTML(id, filename) {
     return;
   }
 }
+
+
+
 loadHTML("tab", "homeTab.html");
+
+
+
 
 
 

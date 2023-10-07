@@ -1,15 +1,28 @@
 
+    const image = document.getElementById('image');
+    console.log(image)
+   
 
-const image = document.getElementById('image');
-const imageSources = [
-    'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/banner-naciva-270622.jpg', 'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/SLIDER1.jpg',
-];
+    const imageSources = [
+        'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/banner-naciva-270622.jpg',
+        'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/SLIDER1.jpg',
+    ];
 
-let currentImageIndex = 0;
+    let currentImageIndex = 0;
 
-function changeImage() {
-    image.src = imageSources[currentImageIndex];
-    currentImageIndex = (currentImageIndex + 1) % imageSources.length;
-}
+    
 
-setInterval(changeImage, 2000);
+    function changeImage() {
+
+        currentImageIndex == 0 ? currentImageIndex = 1 : currentImageIndex=0
+        image.src = imageSources[currentImageIndex];
+    }
+    setInterval(changeImage, 4000);
+   
+
+
+
+    
+
+
+
