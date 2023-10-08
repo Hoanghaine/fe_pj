@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/hai.css">
     <link rel="stylesheet" href="./assets/css/bao.css">
     <link rel="stylesheet" href="./assets/css/thinh.css">
+
     <script src="jquery-3.7.1.min.js"></script>
     <title>Document</title>
 </head>
@@ -41,10 +42,10 @@
                     <h3>0948.558.334</h3>
                 </div>
             </div>
-            <div class="header__top--user">
+            <div class="header__top--user row">
 
                 <div class="header__top--user-login"><a href=""><span class="bold" id="login">Đăng nhập</span></a></div>
-                <span class="bold" style="margin-left: 2px;margin-right: 2px;">/</span>
+                <span class="bold">/</span>
                 <div class="header__top--user-regist"><a href=""><span class="bold" id="regist">Đăng ký</span></a></div>
 
             </div>
@@ -53,6 +54,7 @@
         <div class="header__nav">
             <ul>
                 <li><a href="#" onclick="loadHTML('tab','homeTab.html')">Trang chủ</a></li>
+
                 <li><a href="#" onclick="loadHTML('tab','introTab.html')">Giới thiệu</a></li>
                 <li><a href="#" onclick="loadHTML('tab','productTab.html')">Sản phẩm</a></li>
                 <li><a href="#" onclick="loadHTML('tab','dealerTab.html')">Đăng ký đại lý</a></li>
@@ -119,7 +121,7 @@
         <p>Copyright 2023 © Công Ty Cổ phần Dược Mỹ phẩm Naciva</p>
     </div>
 
-
+    
 </body>
 <script>
     const nav = document.querySelector(".header__nav");
@@ -134,9 +136,7 @@
         }
 
     });
-
-
-  
+    loadHTML("tab", "homeTab.html");
 </script>
 <script src="./assets/js/app.js"></script>
 <script src="./assets/js/bao.js"></script>
