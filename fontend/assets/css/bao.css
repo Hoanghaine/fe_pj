@@ -51,11 +51,11 @@
     margin-bottom: 100px;
   }
 .section_container_title{
-        margin: 20px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        text-align: center;    
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;    
 }
 .section_container_title span::after{
     content: "";
@@ -124,3 +124,80 @@
     text-align: center;
 }
 
+/*----------------reguster------------------------------*/
+
+
+.section_register{
+    width: 100%;
+    height: 150px;
+    background-color:#509a33 ;
+    
+}
+.section_register-conten{
+    color: white;
+    height: 100%;
+    margin: 1px auto;
+    display: flex;
+    width: 85%;
+    justify-content:center;
+    align-items: center;
+}
+.section_register-conten--title{
+    width: 60%;
+}
+.section_register-conten--input{
+    width: 40%;
+}
+.section_register-conten--title h3 {
+    font-size: 30px;
+    margin-bottom:20px;
+    
+}
+.section_register-conten--input input{
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 99px;
+    width: 70%;
+    padding: 0px 20px;
+
+}
+.section_register-conten--input button{
+    height: 50px;
+    width: 25%;
+    border: none;
+    border-radius: 25px;
+    background-color: #a2e011;
+}
+.section_register-conten--input button:hover{
+   
+    border: 1px solid #a2e011;  
+   
+    background-color: #709f01;
+}
+.section_register-conten--input span{
+    opacity: 0;
+}
+.section_Hotproducts{
+    width: 80%;
+    margin: 20px auto;
+}
+.section_Hotproducts_content ul {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.section_Hotproducts_content ul li{
+    width: 25%;
+    height: 200px;
+    border: 1px solid #000;
+  
+   
+    max-width: 25%;
+    padding: 10px;
+    box-sizing: border-box; 
+    padding: 10px;
+
+}
