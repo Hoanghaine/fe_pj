@@ -23,10 +23,8 @@
     display: none ;
     position: absolute;
     width: 200px;
-    /* z-index: 1; */
     display: block;
     top:0px;
-    /* background-color: black; */
     height: 99%;
     background:none;
     border: none;
@@ -46,7 +44,6 @@
 .home_title img{
    width: 100%;
 }
-  /*sestionconten*/
   .section_container{
     margin-bottom: 100px;
   }
@@ -89,7 +86,7 @@
 .section_container_conten-1-img{
     width: 100%;
     border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
     overflow: hidden;
    
 }
@@ -179,25 +176,98 @@
     opacity: 0;
 }
 .section_Hotproducts{
-    width: 80%;
+    width: 95%;
     margin: 20px auto;
 }
 .section_Hotproducts_content ul {
     display: flex;
-    flex-flow: row wrap;
-    flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center; 
+    align-items: center; 
 }
 .section_Hotproducts_content ul li{
-    width: 25%;
-    height: 200px;
-    border: 1px solid #000;
-  
-   
+    width: 20%;
+    height: 420px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    margin: 10px ;
     max-width: 25%;
     padding: 10px;
     box-sizing: border-box; 
     padding: 10px;
+    box-shadow: 4px 4px 15px #00000012;
 
+}
+
+.section_Hotproducts_content-img img{
+    max-height: 100%;
+    transition: transform 0.5s ease ;
+ 
+}
+.section_Hotproducts_content-img img:hover{
+    transform: scale(1.1);
+}
+.section_Hotproducts_content-img{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.section_Hotproducts_content-title p {
+    text-align: center;
+    margin: 20px;
+    font-size: 2017x;
+    color: #000;
+    font-weight: 600;
+
+}
+
+.section_Hotproducts_content-price p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4c9a31;
+}
+.section_Hotproducts_content-add{
+    text-align: center; 
+    margin:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section_Hotproducts_content-add button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 250px;
+    border-radius: 35px;
+    font-size: 17px;
+    color: white;
+    border: 0px none  #4c9a31;
+    font-weight: normal;
+    background-image: linear-gradient(45deg, #197c36, #2d920a);
+    transition: background-color 0.3s, color 0.3s;
+}
+.section_Hotproducts_content-add ion-icon{
+    opacity: 0; 
+    transform: translateX(3px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.section_Hotproducts_content-add button span{
+    transform: translateX(0px);
+    
+    transition:  transform 0.3s ease;
+}
+.section_Hotproducts_content-add button:hover span{
+    transform: translateX(-10px);
+    transition:  transform 0.3s ease;
+}
+.section_Hotproducts_content-add button:hover ion-icon{
+    opacity: 1; 
+    transform: translateX(0);
 }

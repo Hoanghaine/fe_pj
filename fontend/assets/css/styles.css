@@ -7,6 +7,9 @@
 img{
   width: 100%;
 }
+a{
+  text-decoration: none;
+}
 body{
   --color_green:#509A33;
   width: 100%;

@@ -82,6 +82,7 @@
     padding: 15px;
     transition: max-height 0.3s ease-out;
     padding: 15px 70px;
+    z-index: 100;
 
 }
 .header__nav ul{
