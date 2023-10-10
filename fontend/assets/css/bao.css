@@ -92,7 +92,7 @@
 }
 .section_container_conten-1 img{
  
-  transition: transform 0.5s;
+  transition: transform 0.5s ease;
  
   
 }
@@ -266,8 +266,159 @@
 .section_Hotproducts_content-add button:hover span{
     transform: translateX(-10px);
     transition:  transform 0.3s ease;
+    
+}
+.section_Hotproducts_content-add button:hover {
+   background-color: #509a33;
+    
 }
 .section_Hotproducts_content-add button:hover ion-icon{
     opacity: 1; 
     transform: translateX(0);
+}
+/*----------title----------------*/
+
+.section_title-1{
+    margin: 50px auto;
+    display: flex;
+    
+}
+.section_title-1 div{
+    width: 25%;
+    min-height: 447px;
+}
+.section_title-1--imgleft{
+    background: url('../../fonts/img/anh1.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.section_title-1--img-righ{
+    background: url('../../fonts/img/anh2.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.section_title-1--title-1{
+    padding: 45px;
+    background: rgb(235, 246, 224);
+}
+
+.section_title-1--title-1 h2{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.section_title-1--title-1 p{
+    margin: 25px auto;
+    font-size: 18px;
+    line-height: 1.5
+  
+}
+.section_title-1--title-1 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 150px;
+    border-radius: 35px;
+    font-size: 17px;
+    color: white;
+    border: 0px none  #4c9a31;
+    font-weight: normal;
+    background-image: linear-gradient(45deg, #197c36, #2d920a);
+    transition: background-color 0.3s, color 0.3s;
+}
+.section_title-1--title-1 ion-icon{
+    opacity: 0; 
+    transform: translateX(3px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.section_title-1--title-1 button span{
+    transform: translateX(0px);
+    
+    transition:  transform 0.3s ease;
+}
+.section_title-1--title-1 button:hover span{
+    transform: translateX(-10px);
+    transition:  transform 0.3s ease;
+    
+}
+.section_title-1--title-1 button:hover {
+   background-color: #509a33;
+    
+}
+.section_title-1--title-1 button:hover ion-icon{
+    opacity: 1; 
+    transform: translateX(0);
+}
+.backgroud{
+    background:  url('../../fonts/img/backgroud.jpg') ;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-color: rgb(218, 238, 198);
+}
+.section_title-2{
+    width: 100%;
+    margin: auto;
+    height: 700px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    background-image: url('../../fonts/img/backgroud.2jpg.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+
+/*------------------------------ tin tuc ------------------------------*/
+
+.section_title-2--content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.chaid_img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+    height: 230px;
+   
+
+}
+.chaid_img img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: transform 0.3s ease;
+   
+}
+.chaid_img:hover img{
+    transform: scale(1.1);
+}
+.section_title-2--content-chaid{
+    width: 28%;
+    height: 450px;
+    box-shadow: 5px 5px 20px #1d1d1d12;
+    border-radius: 10px;
+    border: 1px solid #00000012;
+}
+.section_title-2--content-chaid h3{
+
+    padding: 10px 20px
+}
+.section_title-2--content-chaid h3:hover{
+
+    color: #2d920a;
+}
+.section_title-2--content-chaid span{
+
+    margin: 30px 20px;
+    color: #8b8b8a;
+}
+.section_title-2--content-chaid p{
+
+    padding: 10px 20px
 }

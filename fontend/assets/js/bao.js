@@ -28,9 +28,9 @@ function changeImage() {
   }
 }
 
-function autoChangeImage() {
+
   setInterval(changeImage, 2000);
-}
+
 
 
     

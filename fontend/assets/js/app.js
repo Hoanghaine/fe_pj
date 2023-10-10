@@ -13,7 +13,7 @@ function loadHTML(id, filename) {
           if (this.status == 200) {
           element.innerHTML = this.responseText;
           if (filename === 'homeTab.html') {    
-            autoChangeImage();
+            // autoChangeImage();
             
           }
           }
