@@ -12,10 +12,7 @@ function loadHTML(id, filename) {
       if (this.readyState == 4) {
           if (this.status == 200) {
           element.innerHTML = this.responseText;
-          if (filename === 'homeTab.html') {    
-            // autoChangeImage();
-            
-          }
+         
           }
           if (this.status == 400) {
           element.innerHTML = "<h1>Page not found.</h1>";
