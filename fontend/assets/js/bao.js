@@ -1,6 +1,3 @@
-console.log("bao");
-
-
 
 function changeImage() {
 
@@ -29,6 +26,7 @@ function changeImage() {
 
 function autoChangeImage() {
   setInterval(changeImage, 2000);
+
 }
 
 
