@@ -61,7 +61,33 @@ function checkInuput(){
 
 
 
+const selectBox = document.getElementById("hienthi");
+const products = document.querySelectorAll(".section_Hotproducts_content ul li");
+
+
+selectBox.addEventListener("change", function() {
+    const selectedValue = selectBox.value;
     
+  
+    
+    if (selectedValue === "thapcao") {
+        products.forEach((product, index) => {
+            const price = parseFloat(product.querySelector(".section_Hotproducts_content-price p").textContent);
+            product.style.order = price;
+        });
+    } else if (selectedValue === "caothap") {
+        products.forEach((product, index) => {
+            const price = parseFloat(product.querySelector(".section_Hotproducts_content-price p").textContent);
+            product.style.order = -price;
+        });
+    }else if (selectedValue === "macdinh") {
+      products.forEach((product, index) => {
+          
+          product.style.order = index;
+      });
+  }
+});
+
 
 
 

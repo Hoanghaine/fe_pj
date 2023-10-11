@@ -1,8 +1,8 @@
 
 console.log("app");
-loadHTML('tab','homeTab.html')
+loadHTML('tab','productTab.html')
 function loadHTML(id, filename) {
-  console.log(`div id: ${id}, filename: ${filename}`);
+  // console.log(`div id: ${id}, filename: ${filename}`);
   let xhttp;
   let element = document.getElementById(id);
   let file = filename;
