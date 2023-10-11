@@ -58,6 +58,8 @@
 
     padding-top: 10px ;
     border-bottom: 1px solid #eee;
+    box-shadow: 4px 4px 15px #00000012;
+
 }
 .header__top{
     display: flex;
