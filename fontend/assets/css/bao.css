@@ -23,10 +23,8 @@
     display: none ;
     position: absolute;
     width: 200px;
-    /* z-index: 1; */
     display: block;
     top:0px;
-    /* background-color: black; */
     height: 99%;
     background:none;
     border: none;
@@ -46,7 +44,6 @@
 .home_title img{
    width: 100%;
 }
-  /*sestionconten*/
   .section_container{
     margin-bottom: 100px;
   }
@@ -89,13 +86,13 @@
 .section_container_conten-1-img{
     width: 100%;
     border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
     overflow: hidden;
    
 }
 .section_container_conten-1 img{
  
-  transition: transform 0.5s;
+  transition: transform 0.5s ease;
  
   
 }
@@ -129,7 +126,7 @@
 
 .section_register{
     width: 100%;
-    height: 150px;
+    height: 240px;
     background-color:#509a33 ;
     
 }
@@ -146,6 +143,7 @@
     width: 60%;
 }
 .section_register-conten--input{
+    margin-top: 40px;
     width: 40%;
 }
 .section_register-conten--title h3 {
@@ -177,27 +175,266 @@
 }
 .section_register-conten--input span{
     opacity: 0;
+    /* border: 1px solid #a2e011; */
+    border-radius: 25px;
+    padding: 20px ;
+}
+#false{
+    border: 1px solid #e03011;
+    
+}
+
+#true{
+    border: 1px solid #a2e011;
+    
+}
+.span{
+    margin-top: 35px;
 }
 .section_Hotproducts{
-    width: 80%;
+    width: 95%;
     margin: 20px auto;
 }
 .section_Hotproducts_content ul {
     display: flex;
-    flex-flow: row wrap;
-    flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center; 
+    align-items: center; 
 }
 .section_Hotproducts_content ul li{
-    width: 25%;
-    height: 200px;
-    border: 1px solid #000;
-  
-   
+    width: 20%;
+    height: 420px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    margin: 10px ;
     max-width: 25%;
     padding: 10px;
     box-sizing: border-box; 
     padding: 10px;
+    box-shadow: 4px 4px 15px #00000012;
 
+}
+
+.section_Hotproducts_content-img img{
+    max-height: 100%;
+    transition: transform 0.5s ease ;
+ 
+}
+.section_Hotproducts_content-img img:hover{
+    transform: scale(1.1);
+}
+.section_Hotproducts_content-img{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.section_Hotproducts_content-title p {
+    text-align: center;
+    margin: 20px;
+    font-size: 2017x;
+    color: #000;
+    font-weight: 600;
+
+}
+
+.section_Hotproducts_content-price p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4c9a31;
+}
+.section_Hotproducts_content-add{
+    text-align: center; 
+    margin:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section_Hotproducts_content-add button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 250px;
+    border-radius: 35px;
+    font-size: 17px;
+    color: white;
+    border: 0px none  #4c9a31;
+    font-weight: normal;
+    background-image: linear-gradient(45deg, #197c36, #2d920a);
+    transition: background-color 0.3s, color 0.3s;
+}
+.section_Hotproducts_content-add ion-icon{
+    opacity: 0; 
+    transform: translateX(3px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.section_Hotproducts_content-add button span{
+    transform: translateX(0px);
+    
+    transition:  transform 0.3s ease;
+}
+.section_Hotproducts_content-add button:hover span{
+    transform: translateX(-10px);
+    transition:  transform 0.3s ease;
+    
+}
+.section_Hotproducts_content-add button:hover {
+   background-color: #509a33;
+    
+}
+.section_Hotproducts_content-add button:hover ion-icon{
+    opacity: 1; 
+    transform: translateX(0);
+}
+/*----------title----------------*/
+
+.section_title-1{
+    margin: 50px auto;
+    display: flex;
+    
+}
+.section_title-1 div{
+    width: 25%;
+    min-height: 447px;
+}
+.section_title-1--imgleft{
+    background: url('../../fonts/img/anh1.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.section_title-1--img-righ{
+    background: url('../../fonts/img/anh2.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.section_title-1--title-1{
+    padding: 45px;
+    background: rgb(235, 246, 224);
+}
+
+.section_title-1--title-1 h2{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.section_title-1--title-1 p{
+    margin: 25px auto;
+    font-size: 18px;
+    line-height: 1.5
+  
+}
+.section_title-1--title-1 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 150px;
+    border-radius: 35px;
+    font-size: 17px;
+    color: white;
+    border: 0px none  #4c9a31;
+    font-weight: normal;
+    background-image: linear-gradient(45deg, #197c36, #2d920a);
+    transition: background-color 0.3s, color 0.3s;
+}
+.section_title-1--title-1 ion-icon{
+    opacity: 0; 
+    transform: translateX(3px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.section_title-1--title-1 button span{
+    transform: translateX(0px);
+    
+    transition:  transform 0.3s ease;
+}
+.section_title-1--title-1 button:hover span{
+    transform: translateX(-10px);
+    transition:  transform 0.3s ease;
+    
+}
+.section_title-1--title-1 button:hover {
+   background-color: #509a33;
+    
+}
+.section_title-1--title-1 button:hover ion-icon{
+    opacity: 1; 
+    transform: translateX(0);
+}
+.backgroud{
+    background:  url('../../fonts/img/backgroud.jpg') ;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-color: rgb(218, 238, 198);
+}
+.section_title-2{
+    width: 100%;
+    margin: auto;
+    height: 700px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    background-image: url('../../fonts/img/backgroud.2jpg.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+
+/*------------------------------ tin tuc ------------------------------*/
+
+.section_title-2--content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.chaid_img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+    height: 230px;
+   
+
+}
+.chaid_img img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: transform 0.3s ease;
+   
+}
+.chaid_img:hover img{
+    transform: scale(1.1);
+}
+.section_title-2--content-chaid{
+    width: 28%;
+    height: 450px;
+    box-shadow: 5px 5px 20px #1d1d1d12;
+    border-radius: 10px;
+    border: 1px solid #00000012;
+}
+.section_title-2--content-chaid h3{
+
+    padding: 10px 20px
+}
+.section_title-2--content-chaid h3:hover{
+
+    color: #2d920a;
+}
+.section_title-2--content-chaid span{
+
+    margin: 30px 20px;
+    color: #8b8b8a;
+}
+.section_title-2--content-chaid p{
+
+    padding: 10px 20px
 }
