@@ -477,3 +477,27 @@
 #back_1, #number2_1 , #next_3{
     opacity: 0;
 }
+/*===============================chi tiết */
+.tipTab{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.tipTab_container{
+    width: 75%;
+    border: 2px solid #000;
+    display: flex;
+    
+}
+.tipTab_container-img{
+    width: 50%;
+    border: 2px solid #000;
+    height: 400px;
+
+}
+.tipTab_container-conten{
+    width: 50%;
+    border: 2px solid #000;
+    height: 400px;
+}
