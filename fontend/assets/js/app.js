@@ -17,6 +17,10 @@ function loadHTML(id, filename) {
                     if (filename === 'productTab.html') {    
                         sortProductByPrice();
                     }
+                    if (filename === 'tipTab.html') {    
+                        changeImageProduct();
+                    }
+
                 }
                 if (this.status == 400) {
                     element.innerHTML = "<h1>Page not found.</h1>";
@@ -234,14 +238,6 @@ node.innerHTML+= additionalHTML;
 
 
 
-// JavaScript
-const childImages = document.querySelectorAll('.hover_img img');
-const buttons = document.querySelectorAll('.btn_left, .btn_right');
-
-// Xác định ảnh đang hiển thị
-console.log(childImages)
-console.log('bao')
-let currentImage = 0;
 
 
 
