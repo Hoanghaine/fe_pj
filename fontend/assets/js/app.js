@@ -2,57 +2,38 @@
 console.log("app");
 loadHTML('tab','tipTab.html')
 function loadHTML(id, filename) {
-  let xhttp;
-  let element = document.getElementById(id);
-  let file = filename;
-  if (file) {
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-      if (this.readyState == 4) {
-          if (this.status == 200) {
-          element.innerHTML = this.responseText;
-         
-          }
-          if (this.status == 400) {
-          element.innerHTML = "<h1>Page not found.</h1>";
-          }
-      }
-      }
-      xhttp.open("GET", `tabs/${file}`, true);
-      xhttp.send();
-      return;
-  }
+    let xhttp;
+    let element = document.getElementById(id);
+    let file = filename;
+    if (file) {
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                if (this.status == 200) {
+                    element.innerHTML = this.responseText;
+                    if (filename === 'homeTab.html') {    
+                        autoChangeImage();
+                    }
+                    if (filename === 'productTab.html') {    
+                        sortProductByPrice();
+                    }
+                }
+                if (this.status == 400) {
+                    element.innerHTML = "<h1>Page not found.</h1>";
+                }
+            }
+            }
+            xhttp.open("GET", `tabs/${file}`, true);
+            xhttp.send();
+            return;
+    }
 }
 
 
 // ========================================================bao==============================
 
 
-function changeImage() {
 
-  const image = document.getElementById('image');
-
-  if (image) {
-
-    const imageSources = [
-      'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/banner-naciva-270622.jpg',
-      'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/SLIDER1.jpg'
-    ];
-
-  
-    
-    let currentImageIndex = parseInt(image.getAttribute('data-image-index')) || 0;
-
-    currentImageIndex = (currentImageIndex === 0) ? 1 : 0;
-
-    image.src = imageSources[currentImageIndex];
-
-
-    image.setAttribute('data-image-index', currentImageIndex);
-  } else {
-    console.error("Image element with ID 'image' not found.");
-  }
-}
 function checkInuput(){
   const input = document.getElementById('input');
   const truee = document.getElementById('true');
@@ -85,39 +66,6 @@ function checkInuput(){
   
   setInterval(resetInput,4000)
 }
-
-  setInterval(changeImage, 2000);
-
-
-
-const selectBox = document.getElementById("hienthi");
-const products = document.querySelectorAll(".section_Hotproducts_content ul li");
-
-
-console.log(selectBox,products);
-
-selectBox.addEventListener("change", function() {
-    const selectedValue = selectBox.value;
-    
-  
-    
-    if (selectedValue === "thapcao") {
-        products.forEach((product, index) => {
-            const price = parseFloat(product.querySelector(".section_Hotproducts_content-price p").textContent);
-            product.style.order = price;
-        });
-    } else if (selectedValue === "caothap") {
-        products.forEach((product, index) => {
-            const price = parseFloat(product.querySelector(".section_Hotproducts_content-price p").textContent);
-            product.style.order = -price;
-        });
-    }else if (selectedValue === "macdinh") {
-      products.forEach((product, index) => {
-          
-          product.style.order = index;
-      });
-  }
-});
 
 
 function hidenode(){
@@ -286,7 +234,6 @@ node.innerHTML+= additionalHTML;
 
 
 
-// JavaScript
 // JavaScript
 const childImages = document.querySelectorAll('.hover_img img');
 const buttons = document.querySelectorAll('.btn_left, .btn_right');
