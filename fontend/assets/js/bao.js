@@ -255,6 +255,16 @@ node.innerHTML+= additionalHTML;
 
 
 
+// JavaScript
+// JavaScript
+const childImages = document.querySelectorAll('.hover_img img');
+const buttons = document.querySelectorAll('.btn_left, .btn_right');
+
+// Xác định ảnh đang hiển thị
+console.log(childImages)
+console.log('bao')
+let currentImage = 0;
+
 
 
 

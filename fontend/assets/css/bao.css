@@ -492,12 +492,86 @@
 }
 .tipTab_container-img{
     width: 50%;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
+    position: relative;
     height: 400px;
 
 }
 .tipTab_container-conten{
     width: 50%;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
     height: 400px;
+}
+
+/* === */
+/* styles.css */
+
+.hover_img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover_img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.hover_img:hover .btn_left ion-icon{
+    opacity: 1;
+    transform: translateX(0); 
+}
+.hover_img:hover .btn_righ ion-icon{
+    opacity: 1;
+    transform: translateX(0);
+}
+.hover_img button{
+    position: absolute;
+}
+
+.btn_left{
+    width: 100px;
+    background: none;
+    border: none;
+    left: 10px;
+    top: 20px;
+    align-items: center;
+    height: 100%;
+  
+}
+.btn_left ion-icon{
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transform: translateX(10px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+.btn_righ ion-icon{
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transform: translateX(-10px); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+.btn_righ{
+    width: 100px;
+    background: none;
+    border: none;
+    right: 10px;
+    top: 20px;
+    align-items: center;
+    height: 100%;
+}
+.tipTab_container-img--chaid{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.chaild_img-1, .chaild_img-2, .chaild_img-3,.chaild_img-4{
+    width: 20%;
+    border: 1px solid #bdbdbd;
+}
+.an{
+    opacity: 0;
 }
