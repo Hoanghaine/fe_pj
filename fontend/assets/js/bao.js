@@ -89,5 +89,182 @@ selectBox.addEventListener("change", function() {
 });
 
 
+function hidenode(){
+  const node = document.getElementById("node");
+  const additionalHTML = `
+  <ul>
+  <li><a href="">
+
+          <div class="section_Hotproducts_content-img">
+              <img src="../fonts/img/sanphamnoibat1.jpg" alt="">
+              <div class="image-overlay"></div>
+
+          </div>
+          <div class="section_Hotproducts_content-title">
+              <p>Sữa rửa mặt Thảo Mộc </p>
+          </div>
+          <div class="section_Hotproducts_content-price">
+              <p>300.000</p>
+          </div>
+
+
+
+      </a></li>
+  <li>
+      <a href="">
+
+          <div class="section_Hotproducts_content-img">
+              <img src="../fonts/img/sanphamnoibat2.jpg" alt="">
+
+          </div>
+          <div class="section_Hotproducts_content-title">
+              <p>Sữa rửa mặt Thảo Mộc </p>
+          </div>
+          <div class="section_Hotproducts_content-price">
+
+              <p>150.000-300.000</p>
+          </div>
+
+
+
+      </a>
+  </li>
+  <li>
+      <a href="">
+
+          <div class="section_Hotproducts_content-img">
+              <img src="../fonts/img/sanphamnoibat3.jpg" alt="">
+
+          </div>
+          <div class="section_Hotproducts_content-title">
+              <p>Sữa rửa mặt Thảo Mộc </p>
+          </div>
+          <div class="section_Hotproducts_content-price">
+
+              <p>300.000</p>
+          </div>
+
+
+
+      </a>
+  </li>
+  <li>
+      <a href="">
+
+          <div class="section_Hotproducts_content-img">
+              <img src="../fonts/img/sanphamnoibat4.jpg" alt="">
+
+          </div>
+          <div class="section_Hotproducts_content-title">
+              <p>Dầu gội phủ bạc thiên nhiên </p>
+          </div>
+          <div class="section_Hotproducts_content-price">
+
+              <p>165.000</p>
+          </div>
+
+
+
+      </a>
+  </li>
+  <li>
+      <a href="">
+
+          <div class="section_Hotproducts_content-img">
+              <img src="../fonts/img/sanphamnoibat5.jpg" alt="">
+
+          </div>
+          <div class="section_Hotproducts_content-title">
+              <p>Combo dầu gội phủ bạc </p>
+          </div>
+          <div class="section_Hotproducts_content-price">
+
+              <p>230.000</p>
+          </div>
+
+
+
+      </a>
+  </li>
+  <li>
+      <a href="">
+
+          <div class="section_Hotproducts_content-img">
+              <img src="../fonts/img/sanphamnoibat6.jpg" alt="">
+
+          </div>
+          <div class="section_Hotproducts_content-title">
+              <p>Combo dầu gọi thảo dược</p>
+          </div>
+          <div class="section_Hotproducts_content-price">
+
+              <p>320.000</p>
+          </div>
+
+
+
+      </a>
+  </li>
+  <li>
+      <a href="">
+
+          <div class="section_Hotproducts_content-img">
+              <img src="../fonts/img/sanphamnoibat7.jpg" alt="">
+
+          </div>
+          <div class="section_Hotproducts_content-title">
+              <p>Combo dầu gọi Naciva 2 </p>
+          </div>
+          <div class="section_Hotproducts_content-price">
+
+              <p>256.000</p>
+          </div>
+
+
+
+      </a>
+  </li>
+  <li>
+
+      <a href="#" >
+
+          <div class="section_Hotproducts_content-img">
+              <img src="../fonts/img/sanphamnoibat8.jpg" alt="">
+
+          </div>
+          <div class="section_Hotproducts_content-title">
+              <p>Combo dầu gọi Naciva 1 </p>
+          </div>
+          <div class="section_Hotproducts_content-price">
+
+              <p>325.000</p>
+          </div>
+
+
+
+      </a>
+
+  </li>
+</ul>
+`;
+node.innerHTML+= additionalHTML;
+
+
+}
+
+
+
+
+// JavaScript
+// JavaScript
+const childImages = document.querySelectorAll('.hover_img img');
+const buttons = document.querySelectorAll('.btn_left, .btn_right');
+
+// Xác định ảnh đang hiển thị
+console.log(childImages)
+console.log('bao')
+let currentImage = 0;
+
+
 
 
