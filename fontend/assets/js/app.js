@@ -1,6 +1,6 @@
 
 console.log("app");
-loadHTML('tab','tipTab.html')
+loadHTML('tab','homeTab.html')
 function loadHTML(id, filename) {
   let xhttp;
   let element = document.getElementById(id);
