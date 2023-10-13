@@ -1,8 +1,8 @@
 .event {
 	margin-top: 30px;
 	display: flex;
-	width: 100%;
-	height: auto;
+	width: 80%;
+
 	margin-bottom: 300px;
 }
 
@@ -37,4 +37,38 @@
 	font-size: 15px;
 	margin: 1.44px 0px;
 	text-align: left;
+}
+
+/* ===================================== */
+.phra1 p {
+	display: block;
+	line-height: 25.6px;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.entry-title {
+	font-size: 28px;
+	font-weight: bold;
+
+	line-height: 35.36px;
+
+	margin: 0px 0px 13.6px;
+}
+
+.date {
+	margin-bottom: 10px;
+	color: #808080;
+	font-size: 14px;
+	line-height: 16.6px;
+}
+
+.intro-left col h2 {
+	font-size: 21px;
+}
+
+.phra1 h2 {
+	margin-top: 10px;
 }

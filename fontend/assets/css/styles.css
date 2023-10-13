@@ -31,6 +31,10 @@ a {
 	flex-direction: column;
 }
 
+.active-link {
+	color: var(--color_green);
+}
+
 /*  ==========================repon================================ */
 
 @media only screen and (min-width: 740px) {
