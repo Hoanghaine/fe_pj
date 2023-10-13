@@ -418,18 +418,3 @@ function changeMainImage(imageName) {
 }
 
 
-  const img1 = document.getElementById(`mainImg1`);
-const img2 = document.getElementById(`mainImg2`);
-const img3 = document.getElementById(`mainImg3`);
-const img4 = document.getElementById(`mainImg4`);
-const images = [img1, img2, img3, img4];
-const img = document.getElementById(`mainImg${currentImageIndex}`);
-for (let i = 0; i < images.length; i++) {
-  if (images[i] === img) {
-      images[i].style.display = 'block';
-      
-  } else {
-      images[i].style.display = 'none';
-  }
-}
-
