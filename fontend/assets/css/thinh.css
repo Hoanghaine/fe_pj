@@ -65,10 +65,14 @@
 	line-height: 16.6px;
 }
 
-.intro-left col h2 {
+.intro-left col p {
 	font-size: 21px;
 }
 
 .phra1 h2 {
 	margin-top: 10px;
+}
+
+.redirect a {
+	color: var(--color_green);
 }
