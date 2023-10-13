@@ -1,29 +1,28 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-img{
-  width: 100%;
+img {
+	width: 100%;
 }
-a{
-  text-decoration: none;
-  color: #000;
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
 }
-body{
-  --color_green:#509A33;
-  width: 100%;
-
-
+body {
+	font-family: "Roboto", sans-serif;
+	--color_green: #509a33;
+	width: 100%;
 }
-a{
-  cursor: pointer; 
+a {
+	cursor: pointer;
 }
-.row{
-  display: flex;
+.row {
+	display: flex;
 }
-.col{
-  display: flex;
-  flex-direction: column;
+.col {
+	display: flex;
+	flex-direction: column;
 }
