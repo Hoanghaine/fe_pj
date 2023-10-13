@@ -297,12 +297,17 @@ function changeImage(direction) {
 
   if (direction === 'left' && currentImageIndex === 1) {
 
+
     currentImageIndex = 4
     
     const img1 = document.getElementById('mainImg1');
     const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
+    const img2 = document.getElementById('mainImg2');
 
     img1.style.display = 'none'
+    img2.style.display = 'none'
+    img3.style.display = 'none'
 
     img4.style.display = 'block'
     img4.style.animation = ' slideRight 0.5s ease'
@@ -321,10 +326,15 @@ function changeImage(direction) {
 
   } else if (direction === 'left' && currentImageIndex === 4) {
     currentImageIndex = 3
-    const img3 = document.getElementById('mainImg3');
+    const img1 = document.getElementById('mainImg1');
     const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
+    const img2 = document.getElementById('mainImg2');
 
     img4.style.display = 'none'
+    img2.style.display = 'none'
+    img1.style.display = 'none'
+
 
     img3.style.display = 'block'
     img3.style.animation = ' slideRight 0.5s ease'
@@ -341,10 +351,15 @@ function changeImage(direction) {
 
   } else if (direction === 'left' && currentImageIndex === 3) {
     currentImageIndex = 2
+    const img1 = document.getElementById('mainImg1');
+    const img4 = document.getElementById('mainImg4');
     const img3 = document.getElementById('mainImg3');
     const img2 = document.getElementById('mainImg2');
 
     img3.style.display = 'none'
+    img1.style.display = 'none'
+    img4.style.display = 'none'
+
 
     img2.style.display = 'block'
     img2.style.animation = ' slideRight 0.5s ease'
@@ -363,8 +378,12 @@ function changeImage(direction) {
   else if (direction === 'left' && currentImageIndex === 2) {
     currentImageIndex = 1
     const img1 = document.getElementById('mainImg1');
+    const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
     const img2 = document.getElementById('mainImg2');
 
+    img3.style.display = 'none'
+    img4.style.display = 'none'
     img2.style.display = 'none'
 
     img1.style.display = 'block'
@@ -384,10 +403,14 @@ function changeImage(direction) {
   }
   else if (direction === 'right' && currentImageIndex === 2) {
     currentImageIndex = 3
+    const img1 = document.getElementById('mainImg1');
+    const img4 = document.getElementById('mainImg4');
     const img3 = document.getElementById('mainImg3');
     const img2 = document.getElementById('mainImg2');
 
     img2.style.display = 'none'
+    img4.style.display = 'none'
+    img1.style.display = 'none'
 
     img3.style.display = 'block'
     img3.style.animation = ' slideLeft 0.5s ease'
@@ -406,10 +429,14 @@ function changeImage(direction) {
   }
   else if (direction === 'right' && currentImageIndex === 3) {
     currentImageIndex = 4
-    const img3 = document.getElementById('mainImg3');
+    const img1 = document.getElementById('mainImg1');
     const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
+    const img2 = document.getElementById('mainImg2');
 
     img3.style.display = 'none'
+    img1.style.display = 'none'
+    img2.style.display = 'none'
 
     img4.style.display = 'block'
     img4.style.animation = ' slideLeft 0.5s ease'
@@ -430,8 +457,12 @@ function changeImage(direction) {
     currentImageIndex = 1
     const img1 = document.getElementById('mainImg1');
     const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
+    const img2 = document.getElementById('mainImg2');
 
     img4.style.display = 'none'
+    img2.style.display = 'none'
+    img3.style.display = 'none'
 
     img1.style.display = 'block'
     img1.style.animation = ' slideLeft 0.5s ease'
@@ -451,9 +482,13 @@ function changeImage(direction) {
   else if (direction === 'right' && currentImageIndex === 1) {
     currentImageIndex = 2
     const img1 = document.getElementById('mainImg1');
+    const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
     const img2 = document.getElementById('mainImg2');
 
     img1.style.display = 'none'
+    img3.style.display = 'none'
+    img4.style.display = 'none'
 
     img2.style.display = 'block'
     img2.style.animation = ' slideLeft 0.5s ease'
@@ -498,6 +533,7 @@ function changeMainImage(imageName) {
           images[i].style.animation = 'slideLeft 0.5s ease';
       } else {
           images[i].style.display = 'none';
+          images[i].style.animation = 'none';
       }
   }
 
