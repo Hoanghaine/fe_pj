@@ -518,10 +518,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .hover_img img {
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
+    
 }
 .hover_img:hover .btn_left ion-icon{
     opacity: 1;
@@ -543,6 +545,7 @@
     top: 20px;
     align-items: center;
     height: 100%;
+    z-index: 2;
   
 }
 .btn_left ion-icon{
@@ -686,4 +689,84 @@
     display: flex;
     list-style: none;
     margin-bottom: 30px;
+}
+
+/* chuyển ảnh :)))))  */
+.slideLeft {
+
+    display: none;
+    animation: slideLeft 0.5s ease;
+}
+
+.slideRight {
+    display: block;
+    animation: slideRight 0.5s ease-in;
+}
+.chaild_img-1,.chaild_img-2,.chaild_img-3,.chaild_img-4{
+    opacity: 0.5;
+    border: none;
+    overflow: hidden;
+    
+}
+.boder{
+    border: 1px solid #bdbdbd;
+    opacity: 1;
+
+}
+.chaild_img-2:hover{
+    border: 1px solid #bdbdbd;
+    opacity: 1;
+    
+}
+.chaild_img-3:hover{
+    border: 1px solid #bdbdbd;
+    opacity: 1;
+}
+.chaild_img-4:hover{
+    border: 1px solid #bdbdbd;
+    opacity: 1;
+}
+.chaild_img-1:hover {
+    border: 1px solid #bdbdbd;
+   
+    opacity: 1;
+}
+.chaild_img-2:hover img{
+   transform: translateY(-5px);
+    
+}
+.chaild_img-3:hover img{
+    transform: translateY(-5px);
+}
+.chaild_img-4:hover img{
+    transform: translateY(-5px);
+}
+.chaild_img-1:hover img {
+    transform: translateY(-5px);
+}
+
+#mainImg4 , #mainImg2 ,#mainImg3,#maiImg1{
+
+    transform: translateY(0);
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+        /* opacity: 0; */
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100px);
+        /* opacity: 0; */
+    }
+    to {
+        transform: translateX(0);
+    }
 }
