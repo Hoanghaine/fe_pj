@@ -1,141 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/hai.css" />
+		<link rel="stylesheet" href="./assets/css/bao.css" />
+		<link rel="stylesheet" href="./assets/css/thinh.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/hai.css">
-    <link rel="stylesheet" href="./assets/css/bao.css">
-    <link rel="stylesheet" href="./assets/css/thinh.css">
+		<script src="jquery-3.7.1.min.js"></script>
+		<title>Web Cơ Sở</title>
+	</head>
 
-    <script src="jquery-3.7.1.min.js"></script>
-    <title>Web Cơ Sở</title>
-</head>
+	<body>
+		<div class="sort_infor">
+			<p>CÔNG TY CỔ PHẦN DƯỢC MỸ PHẨM NACIVA</p>
+			<div class="sort_infor--right">
+				<ion-icon name="mail-outline"></ion-icon><span>cskh@gmail.com</span>
+				<ion-icon name="call-outline"></ion-icon><span>0948.558.334</span>
+				<ion-icon name="cart-outline"></ion-icon><span>Giỏ hàng</span>
+			</div>
+		</div>
 
-<body>
-    <div class="sort_infor">
-        <p>CÔNG TY CỔ PHẦN DƯỢC MỸ PHẨM NACIVA</p>
-        <div class="sort_infor--right">
-            <ion-icon name="mail-outline"></ion-icon><span>cskh@gmail.com</span>
-            <ion-icon name="call-outline"></ion-icon><span>0948.558.334</span>
-            <ion-icon name="cart-outline"></ion-icon><span>Giỏ hàng</span>
+		<div class="header">
+			<div class="header__top">
+				<a href="#">
+					<img
+						src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/logo-naciva.png"
+						alt=""
+						class="header__top--logo"
+					/>
+				</a>
+				<div class="header__top--search">
+					<input type="text" placeholder="Nhập từ khóa tìm kiếm..." />
+					<ion-icon name="search-outline"></ion-icon>
+				</div>
+				<div class="header__top--hotline">
+					<ion-icon class="icon_big-size" name="call-outline"></ion-icon>
+					<div class="header__top--hotline-content">
+						<span>Chăm sóc khách hàng</span>
+						<h3>0948.558.334</h3>
+					</div>
+				</div>
+				<div class="header__top--user row">
+					<div class="header__top--user-login">
+						<a href=""><span class="bold" id="login">Đăng nhập</span></a>
+					</div>
+					<span class="bold">/</span>
+					<div class="header__top--user-regist">
+						<a href=""><span class="bold" id="regist">Đăng ký</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="header__nav">
+				<ul>
+					<li>
+						<a href="#" onclick="loadHTML('tab','homeTab.html')">Trang chủ</a>
+					</li>
 
-        </div>
-    </div>
+					<li>
+						<a href="#" onclick="loadHTML('tab','introTab.html')">Giới thiệu</a>
+					</li>
+					<li>
+						<a href="#" onclick="loadHTML('tab','productTab.html')">Sản phẩm</a>
+					</li>
+					<li>
+						<a href="#" onclick="loadHTML('tab','dealerTab.html')"
+							>Đăng ký đại lý</a
+						>
+					</li>
+					<li>
+						<a href="#" onclick="loadHTML('tab','introTab.html')"
+							>Cẩm nang làm đẹp</a
+						>
+					</li>
+					<li>
+						<a href="#" onclick="loadHTML('tab','introTab.html')"
+							>Tin tức & Sự kiện</a
+						>
+					</li>
+					<li>
+						<a href="#" onclick="loadHTML('tab','introTab.html')">Tuyển dụng</a>
+					</li>
+					<li>
+						<a href="#" onclick="loadHTML('tab','introTab.html')">Liên hệ</a>
+					</li>
+				</ul>
+			</div>
+			<div class="btn-move-to-top" onclick="moveTop();">
+				<ion-icon name="chevron-up-outline"></ion-icon>
+			</div>
+		</div>
 
-    <div class="header">
-        <div class="header__top">
-            <img src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/logo-naciva.png" alt=""
-                class="header__top--logo">
-            <div class="header__top--search">
-                <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
-                <ion-icon name="search-outline"></ion-icon>
+		<div class="tab" id="tab"></div>
 
-            </div>
-            <div class="header__top--hotline">
-                <ion-icon class="icon_big-size" name="call-outline"></ion-icon>
-                <div class="header__top--hotline-content">
-                    <span>Chăm sóc khách hàng</span>
-                    <h3>0948.558.334</h3>
-                </div>
-            </div>
-            <div class="header__top--user row">
-
-                <div class="header__top--user-login"><a href=""><span class="bold" id="login">Đăng nhập</span></a></div>
-                <span class="bold">/</span>
-                <div class="header__top--user-regist"><a href=""><span class="bold" id="regist">Đăng ký</span></a></div>
-
-            </div>
-
-        </div>
-        <div class="header__nav">
-            <ul>
-                <li><a href="#" onclick="loadHTML('tab','homeTab.html')">Trang chủ</a></li>
-
-                <li><a href="#" onclick="loadHTML('tab','introTab.html')">Giới thiệu</a></li>
-                <li><a href="#" onclick="loadHTML('tab','productTab.html')">Sản phẩm</a></li>
-                <li><a href="#" onclick="loadHTML('tab','dealerTab.html')">Đăng ký đại lý</a></li>
-                <li><a href="#" onclick="loadHTML('tab','introTab.html')">Cẩm nang làm đẹp</a></li>
-                <li><a href="#" onclick="loadHTML('tab','introTab.html')">Tin tức & Sự kiện</a></li>
-                <li><a href="#" onclick="loadHTML('tab','introTab.html')">Tuyển dụng</a></li>
-                <li><a href="#" onclick="loadHTML('tab','introTab.html')">Liên hệ</a></li>
-            </ul>
-        </div>
-        <div class="btn-move-to-top" onclick="moveTop();">
-            <ion-icon name="chevron-up-outline"></ion-icon>
-        </div>
-    </div>
-
-    <div class="tab" id="tab">
-    </div>
-
-
-    <div class="footer">
-        <div class="footer__item">
-            <img src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/logo-naciva.png" alt=""
-                class="footer__item--logo">
-            <p>Chúng tôi không ngừng đổi mới, và liên tục nghiên cứu sáng tạo, thiết kế các bộ giải pháp chăm sóc sức
-                khỏe, sắc đẹp góp phần nâng cao chất lượng sống của cộng đồng, nâng tầm vị thế thương hiệu mỹ phẩm Việt
-                trên trường quốc tế.</p>
-
-        </div>
-        <div class="footer__item">
-            <h3>Thông tin liên hệ</h3>
-            <p><span>Công Ty Cổ Phần Dược Mỹ Phẩm Naciva</span></p>
-            <p><span></span>ĐKKD số 0110016683 do Sở kế hoạch và Đầu tư Tp Hà Nội cấp ngày 1/6/2022 </p>
-            <p><span>Người đại diện:</span>Vương Đình Khánh
-            </p>
-            <p><span>Email:</span>cskh@naciva.vn</p>
-            <p><span>Điện thoại:</span>0833.356.969</p>
-            <p><span>Địa chỉ:</span>No7, Liền Kề 20-21 Khu Đất Dịch Vụ Vạn Phúc, Phường Vạn Phúc, Quận Hà Đông, Tp Hà
-                Nội.</p>
-        </div>
-        <div class="footer__item">
-            <h3>Sản phẩm chính</h3>
-            <p><a href="#">Dầu gội phủ bạc Naciva</a></p>
-            <p><a href="#">Dầu gội thảo dược Gừng Mè Naciva</a></p>
-            <p><a href="#">Dầu xả thảo dược Naciva</a></p>
-            <p><a href="#">Tinh chất mọc tóc Naciva</a></p>
-            <p><a href="#">Viên uống kích thích mọc tóc Naciva</a></p>
-            <div class="footer__item--hotline">
-                <ion-icon class="icon_big-size footer__item--hotline-icon" name="call-outline"></ion-icon>
-                <div class="footer__item--hotline-content">
-                    <p>Giải đáp thắc mắc khiếu nại</p>
-                    <p>0948.558.334 (8:00 - 20:00 )</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer__item">
-            <h3>Hỗ trợ khách hàng</h3>
-            <p><a href="#">Chính sách bảo mật</a></p>
-            <p><a href="#">Thỏa thuận người dùng</a></p>
-            <p><a href="#">Giao hàng & vận chuyển</a></p>
-            <p><a href="#">Chính sách đổi trả hàng</a></p>
-        </div>
-    </div>
-    <div class="footer_coppyright">
-        <p>Copyright 2023 © Công Ty Cổ phần Dược Mỹ phẩm Naciva</p>
-    </div>
-
-    
-</body>
-<script>
-    const nav = document.querySelector(".header__nav");
-    window.addEventListener("scroll", () => {
-        const scrollPosition = window.scrollY;
-        if (scrollPosition > 300) {
-            nav.classList.add("sticky");
-        } else {
-            nav.classList.remove("sticky");
-        }
-
-    });
-
-</script>
-<script  src="./assets/js/app.js"></script>
-<script src="./assets/js/bao.js"></script>
-
+		<div class="footer">
+			<div class="footer__item">
+				<img
+					src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/logo-naciva.png"
+					alt=""
+					class="footer__item--logo"
+				/>
+				<p>
+					Chúng tôi không ngừng đổi mới, và liên tục nghiên cứu sáng tạo, thiết
+					kế các bộ giải pháp chăm sóc sức khỏe, sắc đẹp góp phần nâng cao chất
+					lượng sống của cộng đồng, nâng tầm vị thế thương hiệu mỹ phẩm Việt
+					trên trường quốc tế.
+				</p>
+			</div>
+			<div class="footer__item">
+				<h3>Thông tin liên hệ</h3>
+				<p><span>Công Ty Cổ Phần Dược Mỹ Phẩm Naciva</span></p>
+				<p>
+					<span></span>ĐKKD số 0110016683 do Sở kế hoạch và Đầu tư Tp Hà Nội cấp
+					ngày 1/6/2022
+				</p>
+				<p><span>Người đại diện:</span>Vương Đình Khánh</p>
+				<p><span>Email:</span>cskh@naciva.vn</p>
+				<p><span>Điện thoại:</span>0833.356.969</p>
+				<p>
+					<span>Địa chỉ:</span>No7, Liền Kề 20-21 Khu Đất Dịch Vụ Vạn Phúc,
+					Phường Vạn Phúc, Quận Hà Đông, Tp Hà Nội.
+				</p>
+			</div>
+			<div class="footer__item">
+				<h3>Sản phẩm chính</h3>
+				<p><a href="#">Dầu gội phủ bạc Naciva</a></p>
+				<p><a href="#">Dầu gội thảo dược Gừng Mè Naciva</a></p>
+				<p><a href="#">Dầu xả thảo dược Naciva</a></p>
+				<p><a href="#">Tinh chất mọc tóc Naciva</a></p>
+				<p><a href="#">Viên uống kích thích mọc tóc Naciva</a></p>
+				<div class="footer__item--hotline">
+					<ion-icon
+						class="icon_big-size footer__item--hotline-icon"
+						name="call-outline"
+					></ion-icon>
+					<div class="footer__item--hotline-content">
+						<p>Giải đáp thắc mắc khiếu nại</p>
+						<p>0948.558.334 (8:00 - 20:00 )</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer__item">
+				<h3>Hỗ trợ khách hàng</h3>
+				<p><a href="#">Chính sách bảo mật</a></p>
+				<p><a href="#">Thỏa thuận người dùng</a></p>
+				<p><a href="#">Giao hàng & vận chuyển</a></p>
+				<p><a href="#">Chính sách đổi trả hàng</a></p>
+			</div>
+		</div>
+		<div class="footer_coppyright">
+			<p>Copyright 2023 © Công Ty Cổ phần Dược Mỹ phẩm Naciva</p>
+		</div>
+	</body>
+	<script>
+		const nav = document.querySelector(".header__nav");
+		window.addEventListener("scroll", () => {
+			const scrollPosition = window.scrollY;
+			if (scrollPosition > 300) {
+				nav.classList.add("sticky");
+			} else {
+				nav.classList.remove("sticky");
+			}
+		});
+	</script>
+	<script src="./assets/js/app.js"></script>
+	<script src="./assets/js/bao.js"></script>
 </html>
