@@ -1,22 +1,24 @@
+console.log('bao')
 
 function changeImage() {
-
   const image = document.getElementById('image');
-
+  console.log(image)
   if (image) {
-
-    const imageSources = [
-      'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/banner-naciva-270622.jpg',
-      'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/SLIDER1.jpg'
-    ];
-    let currentImageIndex = parseInt(image.getAttribute('data-image-index')) || 0;
-
-    currentImageIndex = (currentImageIndex === 0) ? 1 : 0;
-
-    image.src = imageSources[currentImageIndex];
-
-    image.setAttribute('data-image-index', currentImageIndex);
+      const imageSources = [
+          'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/banner-naciva-270622.jpg',
+          'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/SLIDER1.jpg'
+      ];
+      let currentImageIndex = parseInt(image.getAttribute('data-image-index')) || 0;
+      currentImageIndex = (currentImageIndex === 0) ? 1 : 0;
+      image.src = imageSources[currentImageIndex];
+      image.setAttribute('data-image-index', currentImageIndex);
+      console.log('changed image');
   }
+  
+}
+
+function autoChangeImage() {
+    setInterval(changeImage, 5000);
 }
 
 function checkInuput() {
@@ -51,7 +53,6 @@ function checkInuput() {
 
   setInterval(resetInput, 4000)
 }
-
 
 function hidenode() {
   const node = document.getElementById("node");
@@ -218,10 +219,6 @@ function hidenode() {
 
 
 
-function autoChangeImage() {
-  setInterval(changeImage, 2000);
-}
-
 function checkInuput() {
   const input = document.getElementById('input');
   const truee = document.getElementById('true');
@@ -286,7 +283,7 @@ function sortProductByPrice() {
 var currentImageIndex = 1;
 
 
-function changeImage(direction) {
+function changeImageProduct(direction) {
 
   const img1chail = document.getElementsByClassName(`chaild_img-1`)[0];
   const img2chail = document.getElementsByClassName(`chaild_img-2`)[0];
@@ -511,7 +508,7 @@ function changeImage(direction) {
 }
 
 function changeMainImage(imageName) {
-  const img1 = document.getElementById(`mainImg1`);
+  const img1 = document.getElementById(`mainImg1`); 
   const img2 = document.getElementById(`mainImg2`);
   const img3 = document.getElementById(`mainImg3`);
   const img4 = document.getElementById(`mainImg4`);
