@@ -287,7 +287,7 @@ function sortProductByPrice() {
 var currentImageIndex = 1;
 
 
-function changeImage(direction) {
+function changeImageProduct(direction) {
 
   const img1chail = document.getElementsByClassName(`chaild_img-1`)[0];
   const img2chail = document.getElementsByClassName(`chaild_img-2`)[0];
