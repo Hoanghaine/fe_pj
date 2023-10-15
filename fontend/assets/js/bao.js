@@ -1,28 +1,24 @@
 console.log('bao')
 
 function changeImage() {
-  
   const image = document.getElementById('image');
   console.log(image)
   if (image) {
-
-    const imageSources = [
-      'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/banner-naciva-270622.jpg',
-      'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/SLIDER1.jpg'
-    ];
-    let currentImageIndex = parseInt(image.getAttribute('data-image-index')) || 0;
-
-    currentImageIndex = (currentImageIndex === 0) ? 1 : 0;
-
-    image.src = imageSources[currentImageIndex];
-
-    image.setAttribute('data-image-index', currentImageIndex);
-    console.log('changed image')
+      const imageSources = [
+          'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/banner-naciva-270622.jpg',
+          'http://daugoidau.themevivu.site/wp-content/uploads/2022/06/SLIDER1.jpg'
+      ];
+      let currentImageIndex = parseInt(image.getAttribute('data-image-index')) || 0;
+      currentImageIndex = (currentImageIndex === 0) ? 1 : 0;
+      image.src = imageSources[currentImageIndex];
+      image.setAttribute('data-image-index', currentImageIndex);
+      console.log('changed image');
   }
+  
 }
 
-function autoChangeImage(){
-  setInterval(changeImage, 3000);
+function autoChangeImage() {
+    setInterval(changeImage, 5000);
 }
 
 function checkInuput() {
