@@ -285,90 +285,229 @@ function sortProductByPrice() {
 
 var currentImageIndex = 1;
 
+
 function changeImage(direction) {
+
+  const img1chail = document.getElementsByClassName(`chaild_img-1`)[0];
+  const img2chail = document.getElementsByClassName(`chaild_img-2`)[0];
+  const img3chail = document.getElementsByClassName(`chaild_img-3`)[0];
+  const img4chail = document.getElementsByClassName(`chaild_img-4`)[0];
+  
+  const chail = [img1chail, img2chail, img3chail, img4chail];
+
   if (direction === 'left' && currentImageIndex === 1) {
 
+
     currentImageIndex = 4
+    
     const img1 = document.getElementById('mainImg1');
     const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
+    const img2 = document.getElementById('mainImg2');
 
     img1.style.display = 'none'
+    img2.style.display = 'none'
+    img3.style.display = 'none'
 
     img4.style.display = 'block'
     img4.style.animation = ' slideRight 0.5s ease'
+    const chaild = document.getElementsByClassName(`chaild_img-${currentImageIndex}`)[0];
+    for (let i = 0; i < chail.length; i++) {
+      if (chail[i] === chaild) {
+          chail[i].classList.add('boder');
+      } else {
+          chail[i].style.display = 'block'; 
+          chail[i].classList.remove('boder');
+      }
+     }
 
 
 
 
   } else if (direction === 'left' && currentImageIndex === 4) {
     currentImageIndex = 3
-    const img3 = document.getElementById('mainImg3');
+    const img1 = document.getElementById('mainImg1');
     const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
+    const img2 = document.getElementById('mainImg2');
 
     img4.style.display = 'none'
+    img2.style.display = 'none'
+    img1.style.display = 'none'
+
 
     img3.style.display = 'block'
     img3.style.animation = ' slideRight 0.5s ease'
+
+    const chaild = document.getElementsByClassName(`chaild_img-${currentImageIndex}`)[0];
+    for (let i = 0; i < chail.length; i++) {
+      if (chail[i] === chaild) {
+          chail[i].classList.add('boder');
+      } else {
+          chail[i].style.display = 'block'; 
+          chail[i].classList.remove('boder');
+      }
+     }
+
   } else if (direction === 'left' && currentImageIndex === 3) {
     currentImageIndex = 2
+    const img1 = document.getElementById('mainImg1');
+    const img4 = document.getElementById('mainImg4');
     const img3 = document.getElementById('mainImg3');
     const img2 = document.getElementById('mainImg2');
 
     img3.style.display = 'none'
+    img1.style.display = 'none'
+    img4.style.display = 'none'
+
 
     img2.style.display = 'block'
     img2.style.animation = ' slideRight 0.5s ease'
+
+    const chaild = document.getElementsByClassName(`chaild_img-${currentImageIndex}`)[0];
+    for (let i = 0; i < chail.length; i++) {
+      if (chail[i] === chaild) {
+          chail[i].classList.add('boder');
+      } else {
+          chail[i].style.display = 'block'; 
+          chail[i].classList.remove('boder');
+      }
+     }
+
   }
   else if (direction === 'left' && currentImageIndex === 2) {
     currentImageIndex = 1
     const img1 = document.getElementById('mainImg1');
+    const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
     const img2 = document.getElementById('mainImg2');
 
+    img3.style.display = 'none'
+    img4.style.display = 'none'
     img2.style.display = 'none'
 
     img1.style.display = 'block'
     img1.style.animation = ' slideRight 0.5s ease'
+
+
+    const chaild = document.getElementsByClassName(`chaild_img-${currentImageIndex}`)[0];
+    for (let i = 0; i < chail.length; i++) {
+      if (chail[i] === chaild) {
+          chail[i].classList.add('boder');
+      } else {
+          chail[i].style.display = 'block'; 
+          chail[i].classList.remove('boder');
+      }
+     }
+
   }
   else if (direction === 'right' && currentImageIndex === 2) {
     currentImageIndex = 3
+    const img1 = document.getElementById('mainImg1');
+    const img4 = document.getElementById('mainImg4');
     const img3 = document.getElementById('mainImg3');
     const img2 = document.getElementById('mainImg2');
 
     img2.style.display = 'none'
+    img4.style.display = 'none'
+    img1.style.display = 'none'
 
     img3.style.display = 'block'
     img3.style.animation = ' slideLeft 0.5s ease'
+
+
+    const chaild = document.getElementsByClassName(`chaild_img-${currentImageIndex}`)[0];
+    for (let i = 0; i < chail.length; i++) {
+      if (chail[i] === chaild) {
+          chail[i].classList.add('boder');
+      } else {
+          chail[i].style.display = 'block'; 
+          chail[i].classList.remove('boder');
+      }
+     }
+
   }
   else if (direction === 'right' && currentImageIndex === 3) {
     currentImageIndex = 4
-    const img3 = document.getElementById('mainImg3');
+    const img1 = document.getElementById('mainImg1');
     const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
+    const img2 = document.getElementById('mainImg2');
 
     img3.style.display = 'none'
+    img1.style.display = 'none'
+    img2.style.display = 'none'
 
     img4.style.display = 'block'
     img4.style.animation = ' slideLeft 0.5s ease'
+
+
+    const chaild = document.getElementsByClassName(`chaild_img-${currentImageIndex}`)[0];
+    for (let i = 0; i < chail.length; i++) {
+      if (chail[i] === chaild) {
+          chail[i].classList.add('boder');
+      } else {
+          chail[i].style.display = 'block'; 
+          chail[i].classList.remove('boder');
+      }
+     }
+
   }
   else if (direction === 'right' && currentImageIndex === 4) {
     currentImageIndex = 1
     const img1 = document.getElementById('mainImg1');
     const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
+    const img2 = document.getElementById('mainImg2');
 
     img4.style.display = 'none'
+    img2.style.display = 'none'
+    img3.style.display = 'none'
 
     img1.style.display = 'block'
     img1.style.animation = ' slideLeft 0.5s ease'
+
+
+    const chaild = document.getElementsByClassName(`chaild_img-${currentImageIndex}`)[0];
+    for (let i = 0; i < chail.length; i++) {
+      if (chail[i] === chaild) {
+          chail[i].classList.add('boder');
+      } else {
+          chail[i].style.display = 'block'; 
+          chail[i].classList.remove('boder');
+      }
+     }
+
   }
   else if (direction === 'right' && currentImageIndex === 1) {
     currentImageIndex = 2
     const img1 = document.getElementById('mainImg1');
+    const img4 = document.getElementById('mainImg4');
+    const img3 = document.getElementById('mainImg3');
     const img2 = document.getElementById('mainImg2');
 
     img1.style.display = 'none'
+    img3.style.display = 'none'
+    img4.style.display = 'none'
 
     img2.style.display = 'block'
     img2.style.animation = ' slideLeft 0.5s ease'
+
+
+    const chaild = document.getElementsByClassName(`chaild_img-${currentImageIndex}`)[0];
+    for (let i = 0; i < chail.length; i++) {
+      if (chail[i] === chaild) {
+          chail[i].classList.add('boder');
+      } else {
+          chail[i].style.display = 'block'; 
+          chail[i].classList.remove('boder');
+      }
+     }
+
   }
+
+ 
+
 }
 
 function changeMainImage(imageName) {
@@ -394,24 +533,22 @@ function changeMainImage(imageName) {
           images[i].style.animation = 'slideLeft 0.5s ease';
       } else {
           images[i].style.display = 'none';
+          images[i].style.animation = 'none';
       }
   }
 
   for (let i = 0; i < chail.length; i++) {
       if (chail[i] === chaild) {
-          // chail[i].style.display = 'none';
           chail[i].classList.add('boder');
-          // chail[i].style.opacity='1'
       } else {
           chail[i].style.display = 'block'; 
           chail[i].classList.remove('boder');
-          // chail[i].style.opacity='0.5'
       }
   }
 
+
+
   console.log(chail);
 }
-
-
 
 
