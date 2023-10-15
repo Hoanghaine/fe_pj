@@ -223,6 +223,8 @@ color: var(--color_green);
     width: 100%;
     border-top: 1px solid #eee;
     padding: 20px 30px;
+    justify-content: space-between;
+    line-height: 24.32px;
 }
 .footer__item{
     display: flex;
@@ -348,13 +350,16 @@ color: var(--color_green);
 
 /* dealer */
 .dealer-tab{
-    width: 100vw;
+    width: 100%;
 
 }
 
 .dealer-intro{
     height: 240px;
-    background-color: var(--color_green);
+    background-image: url('../../fonts/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    width: 100%;
     display: block;
     color: #fff;
     padding-top: 40px;
@@ -374,7 +379,7 @@ color: var(--color_green);
 }
 
 .section-2{
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     background-color: var(--color_green);
     padding: 20px 75px;

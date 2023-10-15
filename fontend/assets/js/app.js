@@ -12,16 +12,15 @@ function loadHTML(id, filename) {
             if (this.readyState == 4) {
                 if (this.status == 200) {
                     element.innerHTML = this.responseText;
-
-                    if (filename === 'homeTab.html') {    
+                    console.log('changetab')
+                    if (filename === 'homeTab.html') {   
+                        console.log('hometab');
                         autoChangeImage();
                     }
                     if (filename === 'productTab.html') {    
                         sortProductByPrice();
                     }
-                    // if (filename === 'tipTab.html') {    
-                    //     changeImageProduct();
-                    // }
+
                     
                 }
                 if (this.status == 400) {

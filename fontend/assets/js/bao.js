@@ -1,8 +1,9 @@
+console.log('bao')
 
 function changeImage() {
-
+  
   const image = document.getElementById('image');
-
+  console.log(image)
   if (image) {
 
     const imageSources = [
@@ -16,7 +17,12 @@ function changeImage() {
     image.src = imageSources[currentImageIndex];
 
     image.setAttribute('data-image-index', currentImageIndex);
+    console.log('changed image')
   }
+}
+
+function autoChangeImage(){
+  setInterval(changeImage, 2500);
 }
 
 function checkInuput() {
@@ -51,7 +57,6 @@ function checkInuput() {
 
   setInterval(resetInput, 4000)
 }
-
 
 function hidenode() {
   const node = document.getElementById("node");
@@ -217,10 +222,6 @@ function hidenode() {
 }
 
 
-
-function autoChangeImage() {
-  setInterval(changeImage, 2000);
-}
 
 function checkInuput() {
   const input = document.getElementById('input');
