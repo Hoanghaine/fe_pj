@@ -1,6 +1,7 @@
 
 console.log("app");
-loadHTML('tab','tipTab.html')
+
+loadHTML('tab','homeTab.html')
 function loadHTML(id, filename) {
     let xhttp;
     let element = document.getElementById(id);
@@ -11,16 +12,17 @@ function loadHTML(id, filename) {
             if (this.readyState == 4) {
                 if (this.status == 200) {
                     element.innerHTML = this.responseText;
+
                     if (filename === 'homeTab.html') {    
                         autoChangeImage();
                     }
                     if (filename === 'productTab.html') {    
                         sortProductByPrice();
                     }
-                    if (filename === 'tipTab.html') {    
-                        changeImageProduct();
-                    }
-
+                    // if (filename === 'tipTab.html') {    
+                    //     changeImageProduct();
+                    // }
+                    
                 }
                 if (this.status == 400) {
                     element.innerHTML = "<h1>Page not found.</h1>";
@@ -33,7 +35,5 @@ function loadHTML(id, filename) {
     }
 }
 
-
-// ========================================================bao==============================
 
 

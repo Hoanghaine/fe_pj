@@ -372,7 +372,7 @@ function changeImage(direction) {
 }
 
 function changeMainImage(imageName) {
-  const img1 = document.getElementById(`mainImg1`);
+  const img1 = document.getElementById(`mainImg1`); 
   const img2 = document.getElementById(`mainImg2`);
   const img3 = document.getElementById(`mainImg3`);
   const img4 = document.getElementById(`mainImg4`);
