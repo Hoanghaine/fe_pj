@@ -29,14 +29,14 @@ label {
 .news img:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổi giá trị box-shadow khi di chuột vào */
 }
-.event .news .title {
+.event .news .titleT {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 19px;
 	font-weight: bold;
 }
 
-.event .news .title:hover {
+.event .news .titleT:hover {
 	color: var(--color_green);
 }
 
