@@ -22,7 +22,7 @@ function changeImage() {
 }
 
 function autoChangeImage(){
-  setInterval(changeImage, 2500);
+  setInterval(changeImage, 3000);
 }
 
 function checkInuput() {
