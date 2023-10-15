@@ -127,3 +127,83 @@ label {
 	width: 33.33%;
 	margin-right: 35px;
 }
+
+/* =====================contact */
+
+.bgimg {
+	width: 100%;
+	height: 100%;
+	background-image: url(/fonts/img/bg.jpg);
+	background-size: cover;
+	margin-bottom: 40px;
+}
+
+.title {
+	margin-left: 30px;
+	width: 100%;
+	padding: 50px;
+}
+
+.contact {
+	/* margin 2 bên */
+	margin: 0px 10%;
+	height: 100%;
+	padding: 5%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.title > * {
+	color: white;
+	/* margin trên và dưới 15px */
+	margin: 15px 0px;
+}
+
+.info {
+	width: 50%;
+}
+
+.ico {
+	size: 20px;
+	padding: 10px;
+	border-radius: 50%;
+	background-color: rgba(109, 171, 16, 0.298);
+}
+
+.info > div {
+	display: flex;
+}
+
+.info > div > * {
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.form-contact {
+	padding: 20px;
+	background-color: rgba(115, 170, 101, 0.253);
+	border-radius: 4px;
+	width: 50%;
+}
+
+.form-contact h3 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.form-contact form > * {
+	margin: 10px 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.group-form > label {
+	padding: 10px 0px;
+}
+
+.group-form > input {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
