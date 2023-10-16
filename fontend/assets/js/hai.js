@@ -1,4 +1,4 @@
-console.log('hai')
+console.log("hai");
 
 let activeShowHideCartDropdown = () => {
     const sort_infor_cart = document.getElementById('sort-infor-cart');
@@ -14,9 +14,9 @@ let offShowHideCartDropdown = () =>{
 };
 
 let showCartDropdown = () => {
-    const cartDropdown = document.getElementById('cart-dropdown');
-    cartDropdown.style.display = "block";
-}
+	const cartDropdown = document.getElementById("cart-dropdown");
+	cartDropdown.style.display = "block";
+};
 let hideCartDropdown = () => {
     const cartDropdown = document.getElementById('cart-dropdown');
     cartDropdown.style.display = "none";

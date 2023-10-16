@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
+	line-height: 1.5;
 }
 img {
 	width: 100%;
@@ -29,6 +30,15 @@ a {
 .header__nav ul li {
 	font-weight: bold;
 }
+
+.header__nav ul li a {
+	color: black; /* Màu mặc định */
+}
+
+.header__nav ul li a.selected {
+	color: var(--color_green); /* Màu khi được chọn */
+}
+
 /*  ==========================repon================================ */
 
 @media only screen and (min-width: 740px) {

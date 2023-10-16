@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +16,8 @@
 		<link rel="stylesheet" href="./assets/css/thinh.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 
-
 		<title>Web Cơ Sở</title>
 	</head>
-
 
 	<body>
 		<div class="sort_infor">
@@ -28,42 +25,76 @@
 			<div class="sort_infor--right">
 				<ion-icon name="mail-outline"></ion-icon><span>cskh@gmail.com</span>
 				<ion-icon name="call-outline"></ion-icon><span>0948.558.334</span>
+<<<<<<< HEAD
 				<div class="sort_infor--right-cart" id="sort-infor-cart">
 					<a href="#"  onclick="loadHTML('tab','cartTab.html')" class="cart-icon">
+=======
+				<div
+					class="sort_infor--right-cart"
+					onmouseover="showCartDropdown()"
+					onmouseout="hideCartDropdown()"
+				>
+					<a
+						href="#"
+						onclick="loadHTML('tab','cartTab.html')"
+						class="cart-icon"
+					>
+>>>>>>> 7aa121c06c67d482ceb3d98b7bd292461ca409d3
 						<ion-icon name="cart-outline"></ion-icon><span>Giỏ hàng</span>
 					</a>
 					<div class="cart-dropdown" id="cart-dropdown">
 						<div class="cart-dropdown-items">
 							<div class="cart-dropdown-item row">
-								<a href="#" onclick="loadHTML('tab','tipTab.html')"><img src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/sp5-300x300.jpg" alt="" class="cart-dropdown-item__img"></a>
+								<a href="#" onclick="loadHTML('tab','tipTab.html')"
+									><img
+										src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/sp5-300x300.jpg"
+										alt=""
+										class="cart-dropdown-item__img"
+								/></a>
 								<div class="cart-dropdown-item__content">
 									<a href="#" onclick="loadHTML('tab','tipTab.html')">
-										<p class="cart-dropdown-item__name">Combo dầu gội Naciva 1</p>
+										<p class="cart-dropdown-item__name">
+											Combo dầu gội Naciva 1
+										</p>
 									</a>
 									<p class="cart-dropdown-item__price">2 x 150.000₫</p>
 								</div>
 							</div>
 							<div class="cart-dropdown-item row">
-								<a href=""><img src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/sp6.jpg" alt="" class="cart-dropdown-item__img"></a>
+								<a href=""
+									><img
+										src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/sp6.jpg"
+										alt=""
+										class="cart-dropdown-item__img"
+								/></a>
 								<div class="cart-dropdown-item__content">
 									<a href="">
-										<p class="cart-dropdown-item__name">Combo dầu gội Naciva 2</p>
+										<p class="cart-dropdown-item__name">
+											Combo dầu gội Naciva 2
+										</p>
 									</a>
 									<p class="cart-dropdown-item__price">2 x 200.000₫</p>
 								</div>
 							</div>
 							<p class="cart-dropdown__temp-total">Tạm tính: 700.000₫</p>
-							<div class="btn-go-to-cart"><a href="#" onclick="loadHTML('tab','cartTab.html')" >ĐẾN GIỎ HÀNG</a></div>
-							<div class="btn-order"><a href="#" onclick="loadHTML('tab','billTab.html')" >THANH TOÁN</a></div>
+							<div class="btn-go-to-cart">
+								<a href="#" onclick="loadHTML('tab','cartTab.html')"
+									>ĐẾN GIỎ HÀNG</a
+								>
+							</div>
+							<div class="btn-order">
+								<a href="#" onclick="loadHTML('tab','billTab.html')"
+									>THANH TOÁN</a
+								>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 		<div class="header">
 			<div class="header__top">
-				<a href="#" onclick="loadHTML('tab','homeTab.html')" >
+				<a href="#" onclick="loadHTML('tab','homeTab.html')">
 					<img
 						src="http://daugoidau.themevivu.site/wp-content/uploads/2022/06/logo-naciva.png"
 						alt=""
@@ -94,7 +125,12 @@
 			<div class="header__nav">
 				<ul>
 					<li>
-						<a href="#" onclick="loadHTML('tab','homeTab.html')">Trang chủ</a>
+						<a
+							class="selected"
+							href="#"
+							onclick="loadHTML('tab','homeTab.html')"
+							>Trang chủ</a
+						>
 					</li>
 
 					<li>
@@ -122,16 +158,14 @@
 						<a href="#" onclick="loadHTML('tab','introTab.html')">Tuyển dụng</a>
 					</li>
 					<li>
-						<a href="#" onclick="loadHTML('tab','introTab.html')">Liên hệ</a>
+						<a href="#" onclick="loadHTML('tab','contactTab.html')">Liên hệ</a>
 					</li>
 				</ul>
 			</div>
-			<a href="#">
-				<div class="btn-move-to-top" onclick="moveTop();">
-					<ion-icon name="chevron-up-outline"></ion-icon>
-				</div>
-			</a>
-
+			<div class="btn-move-to-top">
+				<ion-icon name="chevron-up-outline"></ion-icon>
+			</div>
+		</div>
 
 		<div class="tab" id="tab"></div>
 
@@ -204,7 +238,6 @@
 				nav.classList.remove("sticky");
 			}
 		});
-
 	</script>
 	<script src="./assets/js/bao.js"></script>
 	<script src="./assets/js/hai.js"></script>
