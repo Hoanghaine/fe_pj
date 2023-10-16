@@ -2,40 +2,38 @@ console.log("app");
 
 loadHTML("tab", "homeTab.html");
 function loadHTML(id, filename) {
-    let xhttp;
-    let element = document.getElementById(id);
-    let file = filename;
-    if (file) {
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-            if (this.readyState == 4) {
-                if (this.status == 200) {
-                    element.innerHTML = this.responseText;
-                    console.log('changetab')
-                    if (filename !== 'cartTab.html' && filename !== 'billTab.html') {
-                        activeShowHideCartDropdown();
-                    } else {
-                        offShowHideCartDropdown();
-                        
-                    }
-                    if (filename === 'homeTab.html') {   
-                        console.log('hometab');
-                        autoChangeImage();
-                    }
-                    if (filename === 'productTab.html') {    
-                        sortProductByPrice();
-                    }
-    
-                }
-                if (this.status == 400) {
-                    element.innerHTML = "<h1>Page not found.</h1>";
-                }
-            }
-            }
-            xhttp.open("GET", `tabs/${file}`, true);
-            xhttp.send();
-            return;
-    }
+	let xhttp;
+	let element = document.getElementById(id);
+	let file = filename;
+	if (file) {
+		xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function () {
+			if (this.readyState == 4) {
+				if (this.status == 200) {
+					element.innerHTML = this.responseText;
+					console.log("changetab");
+					if (filename !== "cartTab.html" && filename !== "billTab.html") {
+						activeShowHideCartDropdown();
+					} else {
+						offShowHideCartDropdown();
+					}
+					if (filename === "homeTab.html") {
+						console.log("hometab");
+						autoChangeImage();
+					}
+					if (filename === "productTab.html") {
+						sortProductByPrice();
+					}
+				}
+				if (this.status == 400) {
+					element.innerHTML = "<h1>Page not found.</h1>";
+				}
+			}
+		};
+		xhttp.open("GET", `tabs/${file}`, true);
+		xhttp.send();
+		return;
+	}
 }
 //selected tab
 const menuItems = document.querySelectorAll(".header__nav ul li a");
@@ -66,3 +64,38 @@ moveToTop.addEventListener("click", () => {
 		behavior: "smooth",
 	});
 });
+
+document.getElementById("regist").addEventListener("click", function () {
+	document.getElementById("popup").style.display = "block";
+
+	console.log("ab");
+});
+
+function closePopup() {
+	document.getElementById("popup").style.display = "none";
+}
+
+// for register
+
+const popupContent = document.querySelector(".popup-content");
+
+const htmlFileURL = "tabs/register.html";
+
+// Sử dụng fetch để tải nội dung từ file HTML
+fetch(htmlFileURL)
+	.then(response => response.text())
+	.then(data => {
+		popupContent.innerHTML = data;
+	})
+	.catch(error => {
+		console.error("Lỗi khi tải file HTML: " + error);
+	});
+
+// close popup
+
+// document.addEventListener("click", function (e) {
+// 	// click ra ngoài popup thì đóng popup
+// 	if (!popupContent.contains(e.target)) {
+// 		document.getElementById("popup").style.display = "none";
+// 	}
+// });
