@@ -30,7 +30,7 @@ function loadHTML(id, filename) {
 		return;
 	}
 }
-// sleceted tab
+//selected tab
 const menuItems = document.querySelectorAll(".header__nav ul li a");
 
 menuItems.forEach(menuItem => {
