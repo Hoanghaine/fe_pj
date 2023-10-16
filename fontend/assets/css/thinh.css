@@ -160,12 +160,13 @@ label {
 	margin: 15px 0px;
 }
 
-.info {
+/* .info {
 	width: 50%;
-}
+} */
 
 .ico {
-	size: 20px;
+	margin-right: 10px;
+	size: 30px;
 	padding: 10px;
 	border-radius: 50%;
 	background-color: rgba(109, 171, 16, 0.298);
@@ -176,9 +177,14 @@ label {
 }
 
 .info > div > * {
-	padding: 10px;
-	margin: 10px 0px;
+	margin: 10px 5px;
 }
+
+.info > p {
+	margin: 20px 0px;
+}
+
+/* form */
 
 .form-contact {
 	padding: 20px;
