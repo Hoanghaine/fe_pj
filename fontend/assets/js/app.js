@@ -13,6 +13,7 @@ function loadHTML(id, filename) {
                     element.innerHTML = this.responseText;
                     console.log('changetab')
                     if (filename !== 'cartTab.html' && filename !== 'billTab.html') {
+                        console.log('active');
                         activeShowHideCartDropdown();
                     } else {
                         offShowHideCartDropdown();            

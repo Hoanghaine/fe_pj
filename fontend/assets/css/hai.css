@@ -21,27 +21,28 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: var(--color_green);
     color: #fff;
     display: flex;
-    padding-left:100px ;
-    padding-right: 100px;
+
 }
 .sort_infor a{
     color: #fff;
 }
 .sort_infor ion-icon{
+    margin-left: 10px;
+    padding-left: 10px;
     margin-right: 10px;
     font-size: 20px;
 }
 
-.sort_infor p:first-child{
-
+.sort_infor>p,.sort_infor>div{
+    flex-shrink: 0;
 }
 
 
-.sort_infor--right ion-icon {
+.sort_infor--right ion-idealeron {
     margin-left: 20px;
     padding-left: 10px;
 }
@@ -143,6 +144,9 @@ color: var(--color_green);
     z-index: 100;
 
 }
+.header__nav ul li div{
+    display: none;
+}
 .header__nav ul{
     display: flex;
     justify-content: space-evenly;
@@ -164,6 +168,11 @@ color: var(--color_green);
     box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
     width: 100%;
 }
+.menu-icon{
+    display: none;
+    font-size: 30px;
+    margin-right: 15px;
+}
 
 .header__top--logo{
     width: 240px;
@@ -177,24 +186,27 @@ color: var(--color_green);
     justify-content: space-between;
     background-color: #fff;
     padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .header__top--search ion-icon{
     flex-grow: 0;
     flex-shrink: 0;
     font-size: 20px;
-    margin: 5px;
+    margin: 5px 10px 0px 5px;
 }
 .header__top--search input{
     flex: 1;
     border: none;
-    margin-left: 10px;
-
+    padding: 0;
 }
 .header__top--search input:focus{
     outline: none;
 }
 .header__top--hotline{
     display: flex;
+    flex-shrink: 0;
+    margin-right: 15px;
 }
 .header__top--hotline-content{
     display: flex;
@@ -211,6 +223,14 @@ color: var(--color_green);
     text-decoration: none;
     color: #000;
 
+}
+#sort-infor-cart-2{
+    display: none;
+}
+
+#sort-infor-cart-2 a ion-icon{
+
+    font-size: 30px;
 }
 
 #login:hover{
@@ -249,7 +269,7 @@ color: var(--color_green);
 
 }
 .footer__item--logo{
-    width: 180px;
+    width: 100%
 }
 .footer__item--hotline{
     display: flex;
@@ -358,10 +378,10 @@ color: var(--color_green);
 }
 
 .dealer-intro{
-    height: 240px;
+    height: 300px;
     background-image: url('../../fonts/img/bg.jpg');
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto 300px;
     width: 100%;
     display: block;
     color: #fff;
@@ -386,13 +406,13 @@ color: var(--color_green);
     box-sizing: border-box;
     background-color: var(--color_green);
     padding: 20px 75px;
-    height: 570px;
+
 }
 .section-2 h2{
     color: #fff;
     margin-bottom: 20px;
     text-align: center;
-    margin: 30px 70px;
+    margin: 30px 0;
 }
 
 .section-2__cards{
@@ -400,6 +420,7 @@ color: var(--color_green);
     /* --spacing: 20px; */
     /* margin-left: calc(-1 * var(--spacing)); */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0;
     box-sizing: border-box;
@@ -409,6 +430,7 @@ color: var(--color_green);
 
 .section-2__card{
     width:270px;
+    margin-bottom: 15px;
     /* margin-left: var(--spacing); */
 }
 .section-2__card--img{
@@ -501,9 +523,12 @@ color: var(--color_green);
     width: 76px;
 }
 
-
+.delete-icon{
+    font-size: 30px; 
+    flex-shrink: 0;
+}
 .cart-item td{
-    text-align: left  ;
+    text-align: center;
     border-bottom: 1px solid #eee;
 }
 .cart-item__label{
