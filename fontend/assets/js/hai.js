@@ -24,7 +24,13 @@ let hideCartDropdown = () => {
 }
 
 
-
+let hideMenuBarInTablet = () => {
+    const nav = document.getElementById('header_nav');
+    nav.style.display = "none";
+    const div = document.getElementById('tab');
+    div.classList.remove('blur');
+    enableScroll();
+}
 let showMenuBarInTablet = () => {
     const nav = document.getElementById('header_nav');
 
@@ -35,11 +41,11 @@ let showMenuBarInTablet = () => {
         nav.style.flexDirection = "column";
         div.classList.add('blur');
         disableScroll();
+        div.addEventListener('click', hideMenuBarInTablet);
     } else {
         nav.style.display = "none";
         div.classList.remove('blur');
         enableScroll();
-
     }
 }
 

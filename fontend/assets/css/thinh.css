@@ -4,53 +4,102 @@
 }
 .event img{
 	width: 100%;
-	height: 100%;
+
 }
 .event {
-	margin-top: 30px;
-	display: flex;
-	width: 80%;
-	/* khi co nhieu hon 3 tin thi xuong dong */
-	flex-wrap: wrap;
-	/* margin 2 been tren */
-
-	margin: 0px 10%;
-	margin-top: 30px;
-}
-
-.colT {
-	width: 33.33%;
-	margin-bottom: 200px;
-}
-
-.news {
-	width: 380px;
-	height: 213px;
-}
-
-.news img {
 	width: 100%;
-	height: 100%;
+	padding: 3rem  2rem;
+
+}
+
+.news-container {
+	/* flex-container */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.news-item {
+	/* 3 item = 100% / 3 tru them gap */
+	width: calc((100% / 3) - 3rem) ;
+	margin-bottom: 2rem;
+
+}
+
+.news-item img {
+	width: 100%;
+	height: 200px;
 	border-radius: 5px;
 	transition: box-shadow 0.3s; /* Tạo hiệu ứng chuyển đổi cho box-shadow trong 0.3 giây */
 }
-.news img:hover {
+.news-item img:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổi giá trị box-shadow khi di chuột vào */
 }
-.event .news .titleT {
+.event .news-item .titleT {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 19px;
 	font-weight: bold;
+	font-size: large;
 }
 
-.event .news .titleT:hover {
+.event .news-item .titleT:hover {
 	color: var(--color_green);
 }
 
 .event .news .p {
-	font-size: 15px;
-	margin: 1.44px 0px;
+
+
+	text-align: left;
+}
+/* beauti */
+.beauti label {
+	font-weight: bold;
+}
+.beauti img{
+	width: 100%;
+
+}
+.beauti {
+	width: 100%;
+	padding: 3rem  2rem;
+
+}
+
+.beauti-container {
+	/* flex-container */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.beauti-item {
+	/* 3 item = 100% / 3 tru them gap */
+	width: calc((100% / 3) - 3rem) ;
+	margin-bottom: 2rem;
+
+}
+
+.beauti-item img {
+	width: 100%;
+	height: 200px;
+	border-radius: 5px;
+	transition: box-shadow 0.3s; /* Tạo hiệu ứng chuyển đổi cho box-shadow trong 0.3 giây */
+}
+.beauti-item img:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổi giá trị box-shadow khi di chuột vào */
+}
+.beauti .beauti-item .titleT {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: large;
+}
+
+.beauti .beauti-item .titleT:hover {
+	color: var(--color_green);
+}
+
+.beauti .beauti-item .p {
 	text-align: left;
 }
 
