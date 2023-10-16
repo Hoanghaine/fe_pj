@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+img {
+	width: 100%;
+	height: 100%;
+}
+>>>>>>> 9cd624737eb5845f2fdece22a3a2e60be2d0cf8b
 
 label {
 	font-weight: bold;
@@ -7,13 +14,17 @@ label {
 	margin-top: 30px;
 	display: flex;
 	width: 80%;
+	/* khi co nhieu hon 3 tin thi xuong dong */
+	flex-wrap: wrap;
+	/* margin 2 been tren */
 
-	margin-bottom: 300px;
+	margin: 0px 10%;
+	margin-top: 30px;
 }
 
 .colT {
-	margin-left: 40px;
 	width: 33.33%;
+	margin-bottom: 200px;
 }
 
 .news {
@@ -221,27 +232,50 @@ label {
 .group-form textarea{
 	height: 100px;
 
+<<<<<<< HEAD
 }
+=======
+/* ===================register, login */
+>>>>>>> 9cd624737eb5845f2fdece22a3a2e60be2d0cf8b
 .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
 	z-index: 20;
 }
 
 .popup-content {
-    background: #fff;
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    text-align: center;
+	background: #fff;
+	width: 875px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
 }
-/* ===================register, login */
+
+.account-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.register-form {
+	padding-left: 20px;
+	width: 50%;
+}
+
+.login-form {
+	width: 50%;
+	border-right: 1px solid #ccc;
+	padding-right: 20px;
+}
+
+.account-container h3 {
+	padding: 10px 0px;
+}
