@@ -13,6 +13,12 @@ function loadHTML(id, filename) {
                 if (this.status == 200) {
                     element.innerHTML = this.responseText;
                     console.log('changetab')
+                    if (filename !== 'cartTab.html' && filename !== 'billTab.html') {
+                        activeShowHideCartDropdown();
+                    } else {
+                        offShowHideCartDropdown();
+                        
+                    }
                     if (filename === 'homeTab.html') {   
                         console.log('hometab');
                         autoChangeImage();
@@ -20,8 +26,7 @@ function loadHTML(id, filename) {
                     if (filename === 'productTab.html') {    
                         sortProductByPrice();
                     }
-
-                    
+    
                 }
                 if (this.status == 400) {
                     element.innerHTML = "<h1>Page not found.</h1>";
