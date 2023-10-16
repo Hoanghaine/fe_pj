@@ -214,7 +214,6 @@ label {
 	border-radius: 4px;
 }
 
-
 .popup {
     display: none;
     position: fixed;
@@ -237,3 +236,4 @@ label {
     padding: 20px;
     text-align: center;
 }
+/* ===================register, login */
