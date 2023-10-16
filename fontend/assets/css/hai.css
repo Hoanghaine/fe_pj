@@ -219,11 +219,7 @@ color: var(--color_green);
     display: flex;
     flex-shrink: 0;
 }
-.header__top--user a{
-    text-decoration: none;
-    color: #000;
 
-}
 #sort-infor-cart-2{
     display: none;
 }

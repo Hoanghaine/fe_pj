@@ -27,9 +27,6 @@ a {
 	flex-direction: column;
 }
 
-.header__nav ul li {
-	font-weight: bold;
-}
 
 .header__nav ul li a {
 	color: black; /* Màu mặc định */
@@ -304,9 +301,7 @@ a {
 	.header__top--user{
 		display: none;
 	}
-	.header__top--user-login{
-		border-bottom: 1px solid black;
-	}
+
 	#sort-infor-cart-2 {
 		display: block;
 	}

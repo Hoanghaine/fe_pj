@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-=======
-img {
+
+.event label {
+	font-weight: bold;
+}
+.event img{
 	width: 100%;
 	height: 100%;
 }
->>>>>>> 9cd624737eb5845f2fdece22a3a2e60be2d0cf8b
-
-label {
-	font-weight: bold;
-}
-
 .event {
 	margin-top: 30px;
 	display: flex;
@@ -231,12 +227,8 @@ label {
 }
 .group-form textarea{
 	height: 100px;
-
-<<<<<<< HEAD
 }
-=======
 /* ===================register, login */
->>>>>>> 9cd624737eb5845f2fdece22a3a2e60be2d0cf8b
 .popup {
 	display: none;
 	position: fixed;
