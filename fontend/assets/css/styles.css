@@ -38,6 +38,8 @@ a {
 .header__nav ul li a.selected {
 	color: var(--color_green); /* Màu khi được chọn */
 }
-
+.header__top--user-login,
+.header__top--user-regist {
+	cursor: pointer;
+}
 /*  ==========================repon================================ */
-

@@ -76,12 +76,10 @@ function closePopup() {
 }
 
 // for register
-
 const popupContent = document.querySelector(".popup-content");
 
 const htmlFileURL = "tabs/register.html";
 
-// Sử dụng fetch để tải nội dung từ file HTML
 fetch(htmlFileURL)
 	.then(response => response.text())
 	.then(data => {
