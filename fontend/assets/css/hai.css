@@ -57,6 +57,9 @@
     align-items: center;
     margin-right: 10px;
 }
+.sort_infor--right-cart{
+    flex-shrink: 0;
+}
 .cart-dropdown{
     display: none;
     z-index: 10;

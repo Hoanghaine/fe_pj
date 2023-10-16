@@ -42,13 +42,20 @@ a {
 /*  ==========================repon================================ */
 
 @media only screen and (min-width: 740px) {
+
+	body {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
 	.header__top--hotline {
 		display: none;
 	}
-
+	body{
+		background-color: yellow;
+        font-size: 14px;
+	}
 	.header__nav {
 		opacity: 0;
 	}

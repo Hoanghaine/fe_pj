@@ -15,8 +15,7 @@ function loadHTML(id, filename) {
                     if (filename !== 'cartTab.html' && filename !== 'billTab.html') {
                         activeShowHideCartDropdown();
                     } else {
-                        offShowHideCartDropdown();
-                        
+                        offShowHideCartDropdown();            
                     }
                     if (filename === 'homeTab.html') {   
                         console.log('hometab');
