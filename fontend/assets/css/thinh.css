@@ -4,11 +4,12 @@
 }
 .event img{
 	width: 100%;
-
+	/* khong lam anh bi gian~ ra */
+	object-fit: cover;
 }
 .event {
 	width: 100%;
-	padding: 3rem  2rem;
+	padding: 3rem  0 3rem 3rem;
 
 }
 
@@ -22,7 +23,7 @@
 .news-item {
 	/* 3 item = 100% / 3 tru them gap */
 	width: calc((100% / 3) - 3rem) ;
-	margin-bottom: 2rem;
+
 
 }
 
@@ -47,8 +48,6 @@
 }
 
 .event .news .p {
-
-
 	text-align: left;
 }
 /* beauti */
@@ -57,11 +56,12 @@
 }
 .beauti img{
 	width: 100%;
+	object-fit: cover;
 
 }
 .beauti {
 	width: 100%;
-	padding: 3rem  2rem;
+	padding: 3rem  0 3rem 3rem;
 
 }
 
@@ -75,7 +75,7 @@
 .beauti-item {
 	/* 3 item = 100% / 3 tru them gap */
 	width: calc((100% / 3) - 3rem) ;
-	margin-bottom: 2rem;
+
 
 }
 

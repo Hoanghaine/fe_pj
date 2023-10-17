@@ -76,11 +76,12 @@
     list-style: none;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 .section_container_conten ul li{
-   width: 20%;
+   width: 22%;
    /* max-height: 600px; */
    margin-bottom: 20px;
 }
@@ -94,8 +95,8 @@
 }
 .section_container_conten-1 img{
  
-  transition: transform 0.5s ease;
- 
+    transition: transform 0.5s ease;
+    object-fit: cover;
   
 }
 .section_container_conten-1 img:hover{
@@ -104,7 +105,7 @@
    
 }
 .section_container_conten-1-title{
-    margin-top:-2px ;
+
     width: 100%;
     padding: 13px 10px;
     background-color: #4c9a31;
@@ -112,6 +113,7 @@
 .section_container_conten-1-title h3{
     color: white;
     display: flex;
+    font-size:17px;
     justify-content: center;
 }
 .section_container_conten-1-conten{
@@ -128,13 +130,13 @@
 
 .section_register{
     width: 100%;
-    height: 240px;
+
     background-color:#509a33 ;
     
 }
 .section_register-conten{
     color: white;
-    height: 100%;
+
     margin: 1px auto;
     display: flex;
     width: 85%;
@@ -142,16 +144,16 @@
     align-items: center;
 }
 .section_register-conten--title{
-    width: 60%;
+    width: 50%;
+    
 }
 .section_register-conten--input{
     margin-top: 40px;
-    width: 40%;
+    width: 50%;
 }
 .section_register-conten--title h3 {
     font-size: 30px;
     margin-bottom:20px;
-    
 }
 .section_register-conten--input input{
     border: none;
@@ -177,9 +179,10 @@
 }
 .section_register-conten--input span{
     opacity: 0;
-    /* border: 1px solid #a2e011; */
+    font-size: 14px;
     border-radius: 25px;
-    padding: 20px ;
+    padding: 10px ;
+
 }
 #false{
     border: 1px solid #e03011;
@@ -195,7 +198,8 @@
 }
 
 .section_Hotproducts{
-    width: 95%;
+    width: 100%;
+    /* background-color: #a2e011; */
     margin: 20px auto;
 }
 .section_Hotproducts_content ul {
@@ -206,13 +210,13 @@
     align-items: center; 
 }
 .section_Hotproducts_content ul li{
-    overflow: hidden;
-    width: 20%;
+    overflow: hidden;   
+    width: 22%;
     max-height: 520px;
     border: 1px solid #c4c4c4;
     border-radius: 10px;
     margin: 10px ;
-    max-width: 25%;
+    max-width: 25%; 
     padding: 10px;
     box-sizing: border-box; 
     padding: 10px;
@@ -224,7 +228,7 @@
     max-height: 100%;
     min-height: 300px;
     transition: transform 0.5s ease ;
- 
+    object-fit: cover;
 }
 .section_Hotproducts_content-img img:hover{
     transform: scale(1.1);
@@ -240,7 +244,7 @@
 .section_Hotproducts_content-title p {
     text-align: center;
     margin: 20px;
-    font-size: 2017x;
+    font-size: 17px;
     color: #000;
     font-weight: 600;
 
@@ -302,18 +306,18 @@
 .section_title-1{
     margin: 50px auto;
     display: flex;
-    
+    width: 100%;
 }
-.section_title-1 div{
+/* .section_title-1 div{   
     width: 25%;
-    min-height: 447px;
-}
+} */
 .section_title-1--imgleft{
     background: url('../../fonts/img/anh1.jpg');
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+    /* tu dong chiem het cho con trong */
+    flex: 1;
 }
 .section_title-1--img-righ{
     background: url('../../fonts/img/anh2.jpg');
@@ -321,10 +325,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+    /* tu dong chiem het cho con trong */
+    flex: 1;
 }
 .section_title-1--title-1{
     padding: 45px;
     background: rgb(235, 246, 224);
+    flex-basis: 25%;
+    flex-shrink: 0;
 }
 
 .section_title-1--title-1 h2{
@@ -380,12 +388,13 @@
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: center;
+
     background-color: rgb(218, 238, 198);
 }
 .section_title-2{
     width: 100%;
     margin: auto;
-    height: 700px;
+
     /* border: 1px solid rgb(0, 0, 0); */
     background-image: url('../../fonts/img/backgroud.2jpg.jpg');
     background-repeat: no-repeat;
@@ -411,6 +420,7 @@
 
 }
 .chaid_img img {
+    object-fit: cover;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     transition: transform 0.3s ease;
