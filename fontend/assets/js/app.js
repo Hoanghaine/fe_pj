@@ -72,6 +72,10 @@ document.getElementById("regist").addEventListener("click", function () {
 
 	console.log("ab");
 });
+function openPopup() {
+	document.getElementById("popup").style.display = "block";
+    
+}
 
 function closePopup() {
 	document.getElementById("popup").style.display = "none";

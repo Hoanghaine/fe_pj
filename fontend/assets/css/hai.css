@@ -144,6 +144,13 @@ color: var(--color_green);
     z-index: 100;
 
 }
+.header__nav ul li a{
+    display: block;
+
+}
+.header__nav ul li:last-child{
+    display: none;
+}
 .header__nav ul li div{
     display: none;
 }
