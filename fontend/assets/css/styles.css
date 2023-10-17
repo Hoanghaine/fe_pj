@@ -43,6 +43,9 @@
 	.active {
 		pointer-events: auto; /* Make the div active */
 	}
+	.center{
+		text-align: center;
+	}
 	/*  ==========================repon================================ */
 
 	@media only screen and (max-width: 740px) {
@@ -61,6 +64,9 @@
 		
 		  h4 {
 			font-size: 16px;
+		  }
+		  h5 {
+			font-size: 14px;
 		  }
 
 		body {
@@ -334,6 +340,16 @@
 			width: 100%;
 
 		}
+		.section_title-1--title-1 p{
+			font-size: 14px;
+			line-height: 1.5;
+			
+		}
+		.section_title-1--title-1 button{
+			width: 100px;
+			padding: 8px;
+			font-size: 13px;
+		}
 		.section_title-1{
 			flex-direction: column;
 		}
@@ -450,7 +466,9 @@
 		  h4 {
 			font-size: 20px;
 		  }
-
+		  h5 {
+			font-size: 18px;
+		  }
 
 		.header__top--hotline {
 			display: none;
@@ -614,6 +632,16 @@
 			flex-basis: 50%;
 			width: 50%;
 		}
+		.section_title-1--title-1 p{
+			font-size: 14px;
+			line-height: 1.5;
+			
+		}
+		.section_title-1--title-1 button{
+			width: 100px;
+			padding: 10px;
+			font-size: 14px;
+		}
 		.section_title-1--img-righ{
 			display: none;
 		}
@@ -720,7 +748,9 @@
 		  h4 {
 			font-size: 24px;
 		  }
-
+		  h5 {
+			font-size: 20px;
+		  }
 		body {
 			
 		}
