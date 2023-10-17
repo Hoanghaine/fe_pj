@@ -87,16 +87,22 @@
 			padding: 10px 0;
 			display: none;
 			height: 100%;
+			font-size: 14px;
+
 		}
 		.header__nav ul {
 			display: flex;
 			flex-direction: column;
 		}
 		.header__nav li{
-			font-size: 14px;
 			flex-shrink: 0;
 			padding: 10px 0;
 
+		}
+		.header__nav ul li a , .header__top--search input{
+			text-decoration: none ;
+			color: black;
+			font-size: 12px;
 		}
 		.menu-icon{
 			display: block;
@@ -393,7 +399,15 @@
 		.chaid_img{
 			height: 230px;
 		}
-		
+		/* login */
+		.popup-content{
+			width: 450px;
+		}
+		.account-container ion-icon{
+			font-size: 15px;
+			color: red;
+			cursor: pointer;
+		}
 	}
 
 
@@ -463,6 +477,11 @@
 		}
 		.header__nav ul li:not(:first-child):hover{
 			background-color: #eee;
+		}
+		.header__nav ul li a , .header__top--search input{
+			text-decoration: none ;
+			color: black;
+			font-size: 14px;
 		}
 		.header__nav ul li a:hover{
 			background-color: #eee;
@@ -632,5 +651,18 @@
 		}
 		.chaid_img{
 			height: 230px;
+		}
+
+
+		/* login */
+		.popup-content{
+			width: 720px;
+		}
+	}
+	@media only screen and (min-width: 1024px) {
+
+
+		body {
+			
 		}
 	}

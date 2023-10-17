@@ -320,3 +320,8 @@
 .account-container h3 {
 	padding: 10px 0px;
 }
+.account-container ion-icon{
+	font-size: 30px;
+
+	cursor: pointer;
+}
